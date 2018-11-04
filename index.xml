@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SciFX</title>
+    <link>https://scifx.github.io/</link>
+    <description>Recent content on SciFX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 04 Nov 2018 14:07:32 +0800</lastBuildDate>
+    
+	<atom:link href="https://scifx.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test</title>
+      <link>https://scifx.github.io/posts/test/</link>
+      <pubDate>Sun, 04 Nov 2018 14:07:32 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/test/</guid>
+      <description>这是一个测试 shell 代码 $ cd public $ git init $ git remote add origin https://github.com/coderzh/coderzh.github.io.git $ git add -A $ git commit -m &amp;quot;first commit&amp;quot; $ git push -u origin master 链接 www.blender.org 表格 1 0 1 1 0 1 1 0 1 1 0 1 [TOC] 后面待议。。</description>
+    </item>
+    
+    <item>
+      <title>Hello World !</title>
+      <link>https://scifx.github.io/posts/hello/</link>
+      <pubDate>Sat, 03 Nov 2018 22:40:53 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/hello/</guid>
+      <description>欢迎来到我的博客！ 这是一片自由的空间，是我分享知识和见闻的地方~</description>
+    </item>
+    
+  </channel>
+</rss>
