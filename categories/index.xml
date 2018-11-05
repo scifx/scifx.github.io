@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on SciFX</title>
+    <title>SciFX</title>
     <link>https://scifx.github.io/categories/</link>
-    <description>Recent content in Categories on SciFX</description>
+    <description>Recent content on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 03 Nov 2018 22:40:53 +0800</lastBuildDate>
@@ -12,11 +12,28 @@
     
     
     <item>
-      <title></title>
-      <link>https://scifx.github.io/categories/</link>
+      <title>Hello World !</title>
+      <link>https://scifx.github.io/posts/hello/</link>
       <pubDate>Sat, 03 Nov 2018 22:40:53 +0800</pubDate>
       
-      <guid>https://scifx.github.io/categories/</guid>
+      <guid>https://scifx.github.io/posts/hello/</guid>
+      <description>欢迎来到我的博客！ 这是一片自由的空间，是我分享知识和见闻的地方~</description>
+    </item>
+    
+  </channel>
+</rss>%A8/</link>
+      <pubDate>Mon, 05 Nov 2018 13:50:06 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/categories/%E5%AE%9E%E7%94%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>干货</title>
+      <link>https://scifx.github.io/categories/%E5%B9%B2%E8%B4%A7/</link>
+      <pubDate>Mon, 05 Nov 2018 13:50:06 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/categories/%E5%B9%B2%E8%B4%A7/</guid>
       <description></description>
     </item>
     
@@ -26,6 +43,15 @@
       <pubDate>Sun, 04 Nov 2018 14:07:32 +0800</pubDate>
       
       <guid>https://scifx.github.io/categories/%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>视频解析</title>
+      <link>https://scifx.github.io/categories/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Mon, 05 Nov 2018 13:50:06 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/categories/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/</guid>
       <description></description>
     </item>
     
