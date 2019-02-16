@@ -6,10 +6,19 @@
     <description>Recent content in 实用 on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Nov 2018 22:28:42 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Feb 2019 18:35:36 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/tags/%E5%AE%9E%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>人工智能网站</title>
+      <link>https://scifx.github.io/posts/aiweb/</link>
+      <pubDate>Sat, 16 Feb 2019 18:35:36 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/aiweb/</guid>
+      <description>搜索 https://handbook.jiqizhixin.com/ 音乐 https://www.ampermusic.com/ https://www.jukedeck.com 算法生成音乐 http://tones.wolfram.com/ 自动剪辑 https://rotorvideos.com/ https://www.wochit.com/ http://www.write-music.com/songbase.html 色板 http://colormind.io/template/paper-dashboard/ 智能上色网站 http://paintstransfer.com/ 人工智能设计logo https://app.brandmark.io/v2/ 人工智能训练 https://teachablemachine.withgoogle.com/</description>
+    </item>
     
     <item>
       <title>如何从抖音/微视提取无水印视频？（安卓）</title>
