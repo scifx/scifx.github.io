@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>随笔 on SciFX</title>
+    <link>https://scifx.github.io/tags/%E9%9A%8F%E7%AC%94/</link>
+    <description>Recent content in 随笔 on SciFX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 03 Nov 2018 22:40:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://scifx.github.io/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World !</title>
+      <link>https://scifx.github.io/posts/hello/</link>
+      <pubDate>Sat, 03 Nov 2018 22:40:53 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/hello/</guid>
+      <description>欢迎来到我的博客！ 这是一片自由的空间，是我分享知识和见闻的地方~</description>
+    </item>
+    
+  </channel>
+</rss>
