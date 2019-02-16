@@ -13,8 +13,8 @@
     
   
   
-  <meta name="twitter:title" content="Lego Ev3使用指南"/>
-  <meta name="twitter:description" content="乐高ev3dev"/>
+  <meta name="twitter:title" content="乐高Ev3开发笔记"/>
+  <meta name="twitter:description" content="乐高Ev3开发遇到的那些坑"/>
   
     <meta name="twitter:site" content="@your_twitter_id"/>
   
@@ -30,7 +30,7 @@
 		<meta name="author" content="作者官方网站">
 		<meta name="description" content="Site Description">
 		<meta name="generator" content="Hugo 0.50" />
-		<title>Lego Ev3使用指南 &middot; SciFX</title>
+		<title>乐高Ev3开发笔记 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
 		<link rel="stylesheet" href="https://scifx.github.io/css/highlight.css">
@@ -68,11 +68,11 @@
             <article>
                 <header>
                     <h1>
-                        Lego Ev3使用指南
+                        乐高Ev3开发笔记
                     </h1>
                     <h2 class="headline">
                     Feb 14, 2019 23:05
-                    · 19 words
+                    · 327 words
                     · 1 minute read
                       <span class="tags">
                       
@@ -92,9 +92,23 @@
 <ul>
 <li>
 <ul>
+<li><a href="#官方系统">官方系统</a>
+<ul>
 <li>
 <ul>
 <li><a href="#编程软件">编程软件</a></li>
+<li><a href="#手机控制软件">手机控制软件</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#ev3dev">Ev3dev</a>
+<ul>
+<li>
+<ul>
+<li><a href="#ssh登陆工具">SSH登陆工具</a></li>
+<li><a href="#帐号密码">帐号密码</a></li>
+<li><a href="#root权限">Root权限</a></li>
+<li><a href="#网络连接">网络连接</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -105,11 +119,85 @@
                 <section id="post-body">
                     
 
-<h3 id="编程软件">编程软件</h3>
+<h2 id="官方系统">官方系统</h2>
 
-<p>Makecode</p>
+<p><br></p>
 
-<p>Kodular （基于 App inventor）</p>
+<h4 id="编程软件">编程软件</h4>
+
+<p>PC：<strong>官网开发套件</strong>（基于Labview）</p>
+
+<p><a href="https://www.lego.com/en-us/mindstorms/downloads">https://www.lego.com/en-us/mindstorms/downloads</a></p>
+
+<p>Web：Makecode （不支持蓝牙）</p>
+
+<p><a href="https://makecode.mindstorms.com/">https://makecode.mindstorms.com/</a></p>
+
+<p>Web：Kodular （基于 App inventor，开发手机端App）（推荐）</p>
+
+<p><a href="https://www.kodular.io/">https://www.kodular.io/</a></p>
+
+<p><br></p>
+
+<h4 id="手机控制软件">手机控制软件</h4>
+
+<p>原理：能直接发送蓝牙控制代码控制和接收消息，无须Ev3块编程</p>
+
+<p>Commander</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.lego.mindstorms.robotcommander">https://play.google.com/store/apps/details?id=com.lego.mindstorms.robotcommander</a></p>
+
+<p>Mindstroms Cunstom controller （推荐）</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.stefan.mindstormscustomcontroller">https://play.google.com/store/apps/details?id=com.stefan.mindstormscustomcontroller</a></p>
+
+<p>Ev3 Numeric Remote</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.EV3.Numeric">https://play.google.com/store/apps/details?id=com.EV3.Numeric</a></p>
+
+<p>Ev3 Mailbox Remote</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.EV3.Mailbox">https://play.google.com/store/apps/details?id=com.EV3.Mailbox</a></p>
+
+<hr />
+
+<h2 id="ev3dev">Ev3dev</h2>
+
+<p><br></p>
+
+<h4 id="ssh登陆工具">SSH登陆工具</h4>
+
+<p>PC：MobaXterm（推荐）、PuTTy</p>
+
+<p>手机：JuiceSSH、ConnectBot</p>
+
+<p><br></p>
+
+<h4 id="帐号密码">帐号密码</h4>
+
+<p>默认帐号：robot</p>
+
+<p>密码：maker</p>
+
+<p><br></p>
+
+<h4 id="root权限">Root权限</h4>
+
+<p>默认不设root权限，需设置root密码</p>
+
+<p>命令：sudo passwd</p>
+
+<p>（PS：没开启root权限会连不上网络，ping不通）</p>
+
+<p><br></p>
+
+<h4 id="网络连接">网络连接</h4>
+
+<p>通过手机蓝牙上网重点提要</p>
+
+<p>1.手机开启蓝牙网络共享</p>
+
+<p>2.Ev3dev里，ipv4设置为DHCP模式</p>
 
                 </section>
             </article>
