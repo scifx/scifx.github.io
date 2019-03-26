@@ -13,8 +13,8 @@
     
   
   
-  <meta name="twitter:title" content="网站测试"/>
-  <meta name="twitter:description" content="这个页面用于对本站各方面功能进行测试。"/>
+  <meta name="twitter:title" content="乐高Ev3开发笔记"/>
+  <meta name="twitter:description" content="乐高Ev3开发遇到的那些坑"/>
   
     <meta name="twitter:site" content="@your_twitter_id"/>
   
@@ -30,7 +30,7 @@
 		<meta name="author" content="作者官方网站">
 		<meta name="description" content="Site Description">
 		<meta name="generator" content="Hugo 0.54.0" />
-		<title>网站测试 &middot; SciFX</title>
+		<title>乐高Ev3开发笔记 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
 		<link rel="stylesheet" href="https://scifx.github.io/css/highlight.css">
@@ -68,17 +68,17 @@
             <article>
                 <header>
                     <h1>
-                        网站测试
+                        乐高Ev3开发笔记
                     </h1>
                     <h2 class="headline">
-                    Nov 4, 2018 14:07
-                    · 67 words
+                    Feb 14, 2019 23:05
+                    · 327 words
                     · 1 minute read
                       <span class="tags">
                       
                       
                           
-                              <a href="https://scifx.github.io/tags/%E6%B5%8B%E8%AF%95">测试</a>
+                              <a href="https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6">硬件</a>
                           
                       
                       
@@ -92,19 +92,22 @@
 <ul>
 <li>
 <ul>
-<li><a href="#这是一个测试">这是一个测试</a>
+<li><a href="#官方系统">官方系统</a>
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li><a href="#代码">代码</a></li>
-<li><a href="#链接">链接</a></li>
-<li><a href="#表格">表格</a></li>
-<li><a href="#图片">图片</a></li>
-<li><a href="#音乐播放器">音乐播放器</a></li>
-<li><a href="#视频">视频</a></li>
+<li><a href="#编程软件">编程软件</a></li>
+<li><a href="#手机控制软件">手机控制软件</a></li>
 </ul></li>
+</ul></li>
+<li><a href="#ev3dev">Ev3dev</a>
+<ul>
+<li>
+<ul>
+<li><a href="#ssh登陆工具">SSH登陆工具</a></li>
+<li><a href="#帐号密码">帐号密码</a></li>
+<li><a href="#root权限">Root权限</a></li>
+<li><a href="#网络连接">网络连接</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -116,74 +119,85 @@
                 <section id="post-body">
                     
 
-<h2 id="这是一个测试">这是一个测试</h2>
+<h2 id="官方系统">官方系统</h2>
 
-<p>​</p>
+<p><br></p>
 
-<h5 id="代码">代码</h5>
+<h4 id="编程软件">编程软件</h4>
 
-<pre><code class="language-shell">$ cd public
-$ git init
-$ git remote add origin https://github.com/coderzh/coderzh.github.io.git
-$ git add -A
-$ git commit -m &quot;first commit&quot;
-$ git push -u origin master
-</code></pre>
+<p>PC：<strong>官网开发套件</strong>（基于Labview）</p>
 
-<hr />
+<p><a href="https://www.lego.com/en-us/mindstorms/downloads">https://www.lego.com/en-us/mindstorms/downloads</a></p>
 
-<h5 id="链接">链接</h5>
+<p>Web：Makecode （不支持蓝牙）</p>
 
-<p>​   文字链接 <a href="https://www.github.com">github</a></p>
+<p><a href="https://makecode.mindstorms.com/">https://makecode.mindstorms.com/</a></p>
 
-<p>​   <a href="https://www.github.com">https://www.github.com</a></p>
+<p>Web：Kodular （基于 App inventor，开发手机端App）（推荐）</p>
 
-<hr />
+<p><a href="https://www.kodular.io/">https://www.kodular.io/</a></p>
 
-<h5 id="表格">表格</h5>
+<p><br></p>
 
-<table>
-<thead>
-<tr>
-<th>1</th>
-<th>0</th>
-<th>1</th>
-</tr>
-</thead>
+<h4 id="手机控制软件">手机控制软件</h4>
 
-<tbody>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
+<p>原理：能直接发送蓝牙控制代码控制和接收消息，无须Ev3块编程</p>
 
-<tr>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
+<p>Commander</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.lego.mindstorms.robotcommander">https://play.google.com/store/apps/details?id=com.lego.mindstorms.robotcommander</a></p>
+
+<p>Mindstroms Cunstom controller （推荐）</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.stefan.mindstormscustomcontroller">https://play.google.com/store/apps/details?id=com.stefan.mindstormscustomcontroller</a></p>
+
+<p>Ev3 Numeric Remote</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.EV3.Numeric">https://play.google.com/store/apps/details?id=com.EV3.Numeric</a></p>
+
+<p>Ev3 Mailbox Remote</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.EV3.Mailbox">https://play.google.com/store/apps/details?id=com.EV3.Mailbox</a></p>
 
 <hr />
 
-<h5 id="图片">图片</h5>
+<h2 id="ev3dev">Ev3dev</h2>
 
-<p><img src="/images/test.gif" alt="img" /></p>
+<p><br></p>
 
-<hr />
+<h4 id="ssh登陆工具">SSH登陆工具</h4>
 
-<h5 id="音乐播放器">音乐播放器</h5>
+<p>PC：MobaXterm（推荐）、PuTTy</p>
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=640 height=86 src="//music.163.com/outchain/player?type=2&id=26584163&auto=1&height=66"></iframe>
+<p>手机：JuiceSSH、ConnectBot</p>
 
-<hr />
+<p><br></p>
 
-<h5 id="视频">视频</h5>
+<h4 id="帐号密码">帐号密码</h4>
 
-<p><iframe src="//player.bilibili.com/player.html?aid=19090135&cid=31646863&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=640 height=480> </iframe>
-<br/></br></p>
+<p>默认帐号：robot</p>
+
+<p>密码：maker</p>
+
+<p><br></p>
+
+<h4 id="root权限">Root权限</h4>
+
+<p>默认不设root权限，需设置root密码</p>
+
+<p>命令：sudo passwd</p>
+
+<p>（PS：没开启root权限会连不上网络，ping不通）</p>
+
+<p><br></p>
+
+<h4 id="网络连接">网络连接</h4>
+
+<p>通过手机蓝牙上网重点提要</p>
+
+<p>1.手机开启蓝牙网络共享</p>
+
+<p>2.Ev3dev里，ipv4设置为DHCP模式</p>
 
                 </section>
             </article>
@@ -204,7 +218,15 @@ $ git push -u origin master
         </li>
     
         <li>
+            <a href="/posts_link/phone_test/">手机更新博客<aside class="dates">Mar 26 2019</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/aiweb/">人工智能网站<aside class="dates">Feb 16 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts_link/aiweb/">人工智能网站<aside class="dates">Feb 16 2019</aside></a>
         </li>
     
         <li>
@@ -216,11 +238,19 @@ $ git push -u origin master
         </li>
     
         <li>
+            <a href="/posts_link/short_video/">如何从抖音/微视提取无水印视频？（安卓）<aside class="dates">Nov 9 2018</aside></a>
+        </li>
+    
+        <li>
             <a href="/posts/vip_video/">如何免费观看VIP视频？<aside class="dates">Nov 5 2018</aside></a>
         </li>
     
         <li>
-            <a href="/posts/hello/">Hello World !<aside class="dates">Nov 3 2018</aside></a>
+            <a href="/posts_link/vip_video/">如何免费观看VIP视频？<aside class="dates">Nov 5 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/test/">网站测试<aside class="dates">Nov 4 2018</aside></a>
         </li>
     
 </ul>
