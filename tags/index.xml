@@ -6,6 +6,7 @@
     <description>Recent content in Tags on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
+    <lastBuildDate>Sat, 13 Apr 2019 01:47:27 +0000</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>公众号</title>
       <link>https://scifx.github.io/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/</link>
-      <pubDate>Sat, 13 Apr 2019 16:04:05 +0000</pubDate>
+      <pubDate>Sat, 13 Apr 2019 01:47:27 +0000</pubDate>
       
       <guid>https://scifx.github.io/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/</guid>
       <description></description>
@@ -29,20 +30,20 @@
     </item>
     
     <item>
-      <title>测试</title>
-      <link>https://scifx.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
-      <pubDate>Sun, 04 Nov 2018 14:07:32 +0800</pubDate>
-      
-      <guid>https://scifx.github.io/tags/%E6%B5%8B%E8%AF%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>硬件</title>
       <link>https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6/</link>
       <pubDate>Thu, 14 Feb 2019 23:05:33 +0800</pubDate>
       
       <guid>https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试</title>
+      <link>https://scifx.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Sun, 04 Nov 2018 14:07:32 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/tags/%E6%B5%8B%E8%AF%95/</guid>
       <description></description>
     </item>
     

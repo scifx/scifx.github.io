@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ev3 on SciFX</title>
+    <title>ev3 on SciFX</title>
     <link>https://scifx.github.io/categories/ev3/</link>
-    <description>Recent content in Ev3 on SciFX</description>
+    <description>Recent content in ev3 on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 14 Feb 2019 23:05:33 +0800</lastBuildDate>
