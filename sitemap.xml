@@ -4,42 +4,59 @@
   
   <url>
     <loc>https://scifx.github.io/categories/</loc>
-    <lastmod>2019-04-13T01:47:27+00:00</lastmod>
+    <lastmod>2019-06-23T17:17:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scifx.github.io/categories/</loc>
-    <lastmod>2019-04-13T01:47:27+00:00</lastmod>
+    <lastmod>2019-06-23T17:17:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scifx.github.io/posts/</loc>
-    <lastmod>2019-04-13T01:47:27+00:00</lastmod>
+    <lastmod>2019-06-23T17:17:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scifx.github.io/</loc>
-    <lastmod>2019-04-13T01:47:27+00:00</lastmod>
+    <lastmod>2019-06-23T17:17:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scifx.github.io/tags/</loc>
+    <lastmod>2019-06-23T17:17:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scifx.github.io/posts/2019623/</loc>
+    <lastmod>2019-06-23T17:17:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scifx.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2019-06-23T17:17:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scifx.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2019-06-23T17:17:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://scifx.github.io/categories/%E5%85%AC%E4%BC%97%E5%8F%B7/</loc>
     <lastmod>2019-04-13T01:47:27+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://scifx.github.io/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/</loc>
-    <lastmod>2019-04-13T01:47:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://scifx.github.io/categories/%E5%85%AC%E4%BC%97%E5%8F%B7/</loc>
     <lastmod>2019-04-13T01:47:27+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -61,13 +78,13 @@
   </url>
   
   <url>
-    <loc>https://scifx.github.io/tags/%E5%AE%9E%E7%94%A8/</loc>
+    <loc>https://scifx.github.io/categories/%E5%AE%9E%E7%94%A8/</loc>
     <lastmod>2019-02-16T18:35:36+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://scifx.github.io/categories/%E5%AE%9E%E7%94%A8/</loc>
+    <loc>https://scifx.github.io/tags/%E5%AE%9E%E7%94%A8/</loc>
     <lastmod>2019-02-16T18:35:36+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -96,13 +113,13 @@
   </url>
   
   <url>
-    <loc>https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6/</loc>
+    <loc>https://scifx.github.io/categories/%E7%A1%AC%E4%BB%B6/</loc>
     <lastmod>2019-02-14T23:05:33+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://scifx.github.io/categories/%E7%A1%AC%E4%BB%B6/</loc>
+    <loc>https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6/</loc>
     <lastmod>2019-02-14T23:05:33+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -136,13 +153,13 @@
   </url>
   
   <url>
-    <loc>https://scifx.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://scifx.github.io/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2018-11-04T14:07:32+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://scifx.github.io/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://scifx.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2018-11-04T14:07:32+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -160,12 +177,6 @@
   <url>
     <loc>https://scifx.github.io/posts/hello/</loc>
     <lastmod>2018-11-03T22:40:53+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scifx.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2018-11-03T22:40:53+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
