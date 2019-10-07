@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta https-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 
+			
+  
+    <meta name="twitter:card" content="summary"/>
+    
+      <meta name="twitter:image" content="https://scifx.github.io/images/avatar.png" />
+    
+  
+  
+  <meta name="twitter:title" content="关于Nim语言"/>
+  <meta name="twitter:description" content="人生苦短，我用Python（Nim）"/>
+  
+    <meta name="twitter:site" content="@your_twitter_id"/>
+  
+  
+  
+  
+    <meta name="twitter:creator" content="@作者官方网站"/>
+  
+
+
+
+		
+		<meta name="author" content="作者官方网站">
+		<meta name="description" content="Site Description">
+		<meta name="generator" content="Hugo 0.55.6" />
+		<title>关于Nim语言 &middot; SciFX</title>
+		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
+		<link rel="stylesheet" href="https://scifx.github.io/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://scifx.github.io/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://scifx.github.io/'> <span class="arrow">←</span>主页</a>
+	
+	<a href='https://scifx.github.io/posts'>文章</a>
+	<a href='https://scifx.github.io/tags'>分类</a>
+	<a href='https://scifx.github.io/about'>关于</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        关于Nim语言
+                    </h1>
+                    <h2 class="headline">
+                    Oct 7, 2019 13:11
+                    · 1344 words
+                    · 3 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://scifx.github.io/tags/nim%E8%AF%AD%E8%A8%80">Nim语言</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#简约-美观-实用">简约，美观，实用</a>
+<ul>
+<li><a href="#简约">简约</a></li>
+<li><a href="#美观">美观</a></li>
+<li><a href="#实用">实用</a></li>
+</ul></li>
+<li><a href="#美中不足">美中不足</a></li>
+<li><a href="#两全其美">两全其美？</a></li>
+<li><a href="#结语">结语</a></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    
+
+<h1 id="简约-美观-实用">简约，美观，实用</h1>
+
+<p>人们应该花更多时间在解决问题上，</p>
+
+<p>而不是纠结人为的规则。</p>
+
+<p>应以最小的代价，换取最高的效率，解决问题才是首要。</p>
+
+<p>在了解过很多门编程语言后，感觉Python最合我意。</p>
+
+<p>语法足够简单，没有太多奇怪的符号，第三方库足够多。</p>
+
+<p>这就满足三要素：简约，美观，实用</p>
+
+<p>让我们对比下Python，来看下Nim。</p>
+
+<p><br></p>
+
+<h2 id="简约">简约</h2>
+
+<p>简约在我眼里就是，</p>
+
+<p>打声招呼就直接了当，</p>
+
+<p>说一句你好，能一句说完就别来一段。</p>
+
+<pre><code class="language-python">#Python
+print(&quot;你好&quot;)
+
+#Nim
+echo “你好”
+</code></pre>
+
+<p>你看就这么简单，反观需要main和入口函数的语言，一句你好天荒地老呀。。。</p>
+
+<p><br></p>
+
+<h2 id="美观">美观</h2>
+
+<p>有的人不喜欢缩进式语言，但我可以告诉你，我为何我喜欢缩进。</p>
+
+<pre><code>如果你把代码段
+
+看作一张设计图
+
+从美学角度上看
+
+缩进的排版一眼看过去
+
+结构分明，清晰直观，眼睛舒适。
+
+因为对齐和间距不费力被眼睛下意识捕捉。
+</code></pre>
+
+<p>反观一堆花括号虽然逻辑界限分明，倘若缩进不好，还得从细节处审查代码块的边界，</p>
+
+<p>还会常常遗漏掉花括号，并且不够直观，美观度太低。</p>
+
+<p>对称是一种美~</p>
+
+<p>如果你是美观派，可能就喜欢Python，当然也会喜欢Nim。</p>
+
+<p><br></p>
+
+<h2 id="实用">实用</h2>
+
+<p>写代码是为了让计算机解决实际问题，这就是实用。</p>
+
+<p>Python实用之处建立在各式各样的第三方库。</p>
+
+<p>Python语法虽然简单，但你用函数得记得它们的位置。</p>
+
+<p>（通常函数会嵌套几层才能找到，会让人忘了函数在哪里。。。）</p>
+
+<pre><code class="language-python">#Python
+import os,shutil
+os.chdir()#设置当前路径
+os.path.abspath()#返回绝对路径
+shutil.move()#移动文件
+
+#Nim
+import os
+setCurrentDir()#设置当前路径
+absolutePath()#返回绝对路径
+moveFile()#移动文件
+
+</code></pre>
+
+<p>可以看到，比起Python，Nim的标准库函数的嵌套很浅，而且命名很直观，就字面意思，更人性化。</p>
+
+<p><br></p>
+
+<h1 id="美中不足">美中不足</h1>
+
+<p>Python毕竟是解析型语言，速度不太好，而且比较依赖解析器环境，不能直接操作内存。</p>
+
+<p>即便如此我也不打算放弃Python，毕竟生态和解决方案很多。</p>
+
+<p>对于这个问题，一般只要用C语言加速需要的部分就好了。</p>
+
+<p>然而，写起C语言来也是个头疼的过程。太底层了，又得纠结于语法和概念，效率一下又下去了。</p>
+
+<p>然后又有了cython，但cython需要安装和配置一些依赖环境，生成的pyd并不是python各版本通用的。</p>
+
+<p>这时候我就会想，有没有一个语法简单，但速度也足够快的语言，可以编译为可执行文件，又能加速Python的代码，岂不完美？</p>
+
+<p><br></p>
+
+<h1 id="两全其美">两全其美？</h1>
+
+<p>从前面可以了解到，Nim在语法上有着不亚于Python的优雅。</p>
+
+<p>并且作为一门定位于系统级的编译型语言，有着C语言的速度，一般是Nim译为C语言后生成机器码的。</p>
+
+<p>因此和C语言的互操作性很好，相当于给C语言套上了一个易用的外壳，好比一个编译版的Python。</p>
+
+<p>也就理所当然地，Nim也可以直接操作内存，可生成动态链接库，如dll等。</p>
+
+<p>nimpy库可以生成pyd扩展，而且不受python版本的限制。（赞！）</p>
+
+<p>就这一点来说，对于弥补Python的劣势，Nim语言是一个很好的后援。</p>
+
+<p>但这并不表明Nim是两全其美的，除了第三方库比较少这个必经的问题外，个人觉得Nim的类型声明规则有点令人头大。</p>
+
+<p><br></p>
+
+<h1 id="结语">结语</h1>
+
+<p>编程也是一门艺术~</p>
+
+<p>简约，美观，实用，快速</p>
+
+<p>才能让人专注于解决问题和创作！</p>
+
+<p>Nim语言看着还行，学习成本不高，可以做Python后援，期待后续发展~</p>
+
+<p><br></p>
+
+                </section>
+            </article>
+
+            
+                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2fnim%2f - %e5%85%b3%e4%ba%8eNim%e8%af%ad%e8%a8%80 by @your_twitter_id"><span class="icon-twitter"> tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+            
+
+            
+
+            
+                <ul id="post-list" class="archive readmore">
+    <h3>阅读更多</h3>
+
+    
+    
+    
+        <li>
+            <a href="/posts/opensource_proj/">开源项目资源<aside class="dates">Sep 23 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/works/">作品展示<aside class="dates">Aug 15 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/fx_nodes/"> Fx扩展节点使用指南（Animation nodes）<aside class="dates">Aug 14 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/2019623/">我回来啦!<aside class="dates">Jun 23 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/lab/">欢迎来到新奇有趣的实验室<aside class="dates">Apr 13 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/aiweb/">人工智能网站<aside class="dates">Feb 16 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/ev3/">乐高Ev3开发笔记<aside class="dates">Feb 14 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/short_video/">如何从抖音/微视提取无水印视频？（安卓）<aside class="dates">Nov 9 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/vip_video/">如何免费观看VIP视频？<aside class="dates">Nov 5 2018</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/test/">网站测试<aside class="dates">Nov 4 2018</aside></a>
+        </li>
+    
+</ul>
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/scifx">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2018 Scifx. All Rights Reserved.
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://scifx.github.io/js/jquery-3.3.1.min.js"></script>
+<script src="https://scifx.github.io/js/main.js"></script>
+<script src="https://scifx.github.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script>
+var baiduAnalytics = '0272005f8fe0dc058a5086e0996a01a2';
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?" + baiduAnalytics;
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+    </body>
+</html>
