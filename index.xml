@@ -6,10 +6,19 @@
     <description>Recent content on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 15 Aug 2019 11:02:53 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Sep 2019 16:19:32 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>开源项目资源</title>
+      <link>https://scifx.github.io/posts/opensource_proj/</link>
+      <pubDate>Mon, 23 Sep 2019 16:19:32 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/opensource_proj/</guid>
+      <description>素材网站 影片： 宇宙之心（科学家采访素材） http://www.themindoftheuniverse.org/ 互联网档案馆 https://archive.org/ NASA官网 https://www.nasa.gov/ science360 https://science360.gov/files/</description>
+    </item>
     
     <item>
       <title>作品展示</title>
