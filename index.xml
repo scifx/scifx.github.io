@@ -6,10 +6,19 @@
     <description>Recent content on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 07 Oct 2019 19:50:42 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 08 Oct 2019 14:05:37 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nim语言笔记</title>
+      <link>https://scifx.github.io/posts/1570514736/</link>
+      <pubDate>Tue, 08 Oct 2019 14:05:37 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1570514736/</guid>
+      <description>let a=10; #创建常量(初始化后部不可变) const a=1; #创建常量(编译期计算定值) var a=10 #创建变量 let a:int=10 #创建变量设置类型 int float string var name=readLine(stdin) #用户输入 var foo=[1，2</description>
+    </item>
     
     <item>
       <title>B站的排名算法</title>

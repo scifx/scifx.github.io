@@ -13,8 +13,8 @@
     
   
   
-  <meta name="twitter:title" content="乐高Ev3开发笔记"/>
-  <meta name="twitter:description" content="乐高Ev3开发遇到的那些坑"/>
+  <meta name="twitter:title" content="Nim语言笔记"/>
+  <meta name="twitter:description" content="如题"/>
   
     <meta name="twitter:site" content="@your_twitter_id"/>
   
@@ -30,7 +30,7 @@
 		<meta name="author" content="作者官方网站">
 		<meta name="description" content="Site Description">
 		<meta name="generator" content="Hugo 0.55.6" />
-		<title>乐高Ev3开发笔记 &middot; SciFX</title>
+		<title>Nim语言笔记 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
 		<link rel="stylesheet" href="https://scifx.github.io/css/highlight.css">
@@ -64,17 +64,17 @@
             <article>
                 <header>
                     <h1>
-                        乐高Ev3开发笔记
+                        Nim语言笔记
                     </h1>
                     <h2 class="headline">
-                    Feb 14, 2019 23:05
-                    · 327 words
+                    Oct 8, 2019 14:05
+                    · 429 words
                     · 1 minute read
                       <span class="tags">
                       
                       
                           
-                              <a href="https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6">硬件</a>
+                              <a href="https://scifx.github.io/tags/nim%E8%AF%AD%E8%A8%80">Nim语言</a>
                           
                       
                       
@@ -83,123 +83,172 @@
                 </header>
                 
                   
-                    <div id="toc">
-                      <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#官方系统">官方系统</a>
-<ul>
-<li>
-<ul>
-<li><a href="#编程软件">编程软件</a></li>
-<li><a href="#手机控制软件">手机控制软件</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#ev3dev">Ev3dev</a>
-<ul>
-<li>
-<ul>
-<li><a href="#ssh登陆工具">SSH登陆工具</a></li>
-<li><a href="#帐号密码">帐号密码</a></li>
-<li><a href="#root权限">Root权限</a></li>
-<li><a href="#网络连接">网络连接</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-                    </div>
-                  
                 
                 <section id="post-body">
-                    
+                    <pre><code>let a=10;
+#创建常量(初始化后部不可变)
 
-<h2 id="官方系统">官方系统</h2>
+const a=1;
+#创建常量(编译期计算定值)
 
-<p><br></p>
+var a=10
+#创建变量
 
-<h4 id="编程软件">编程软件</h4>
+let a:int=10
+#创建变量设置类型 int float string
 
-<p>PC：<strong>官网开发套件</strong>（基于Labview）</p>
+var name=readLine(stdin)
+#用户输入
 
-<p><a href="https://www.lego.com/en-us/mindstorms/downloads">https://www.lego.com/en-us/mindstorms/downloads</a></p>
+var foo=[1，2，3，4，5]
+foo[0]=2
+echo foo[0..2]
+#数组
 
-<p>Web：Makecode （不支持蓝牙）</p>
+var foo={1，2，3，4，5}
+#序列
 
-<p><a href="https://makecode.mindstorms.com/">https://makecode.mindstorms.com/</a></p>
+nil
+#空类型是nil
 
-<p>Web：Kodular （基于 App inventor，开发手机端App）（推荐）</p>
+$xx
+#转为字符串用$号
 
-<p><a href="https://www.kodular.io/">https://www.kodular.io/</a></p>
+discard
+#忽略，类似pass
 
-<p><br></p>
+type
+    xx
+#定义新数据类型
 
-<h4 id="手机控制软件">手机控制软件</h4>
+type
+    xx = enum
+        x,x,x,x
+var y=x
+#枚举类型(只允许特定值)
 
-<p>原理：能直接发送蓝牙控制代码控制和接收消息，无须Ev3块编程</p>
+type
+    x=range[0..5]
+#范围类型
 
-<p>Commander</p>
+type
+    x= set[char]
+#集合类型
 
-<p><a href="https://play.google.com/store/apps/details?id=com.lego.mindstorms.robotcommander">https://play.google.com/store/apps/details?id=com.lego.mindstorms.robotcommander</a></p>
+type
+    x=array[0..5,int]
 
-<p>Mindstroms Cunstom controller （推荐）</p>
+low(x),high(x)
+#数组
 
-<p><a href="https://play.google.com/store/apps/details?id=com.stefan.mindstormscustomcontroller">https://play.google.com/store/apps/details?id=com.stefan.mindstormscustomcontroller</a></p>
+var x:seq[int]
+y=@[1,2,3,4,5,6]
+#序列
 
-<p>Ev3 Numeric Remote</p>
+var x:array[3,string]
+#开放数组
 
-<p><a href="https://play.google.com/store/apps/details?id=com.EV3.Numeric">https://play.google.com/store/apps/details?id=com.EV3.Numeric</a></p>
+var x:seq[string]
+#开放序列
 
-<p>Ev3 Mailbox Remote</p>
+x[1..10]
+x[10..^1]
+#切片操作
 
-<p><a href="https://play.google.com/store/apps/details?id=com.EV3.Mailbox">https://play.google.com/store/apps/details?id=com.EV3.Mailbox</a></p>
+type
+    xx=object
+        x:类型
+var y=xx(x:xxx)
+#对象
 
-<hr />
+type
+    xx=tuple
+        x:类型
+        xx：类型
+y=tuple[x:xxx,xx:xxx]
+#元组
 
-<h2 id="ev3dev">Ev3dev</h2>
+type
+    Node = ref object
+      le, ri: Node
+      data: int
+  var
+    n: Node
+  new(n)
+  n.data = 9 
+#指针
 
-<p><br></p>
+proc xx(x:int)=xxx
 
-<h4 id="ssh登陆工具">SSH登陆工具</h4>
+proc yy(zz:proc (x:int))=
+    xxx
+    zz(xx)
+#程序类型
 
-<p>PC：MobaXterm（推荐）、PuTTy</p>
+if xx：
 
-<p>手机：JuiceSSH、ConnectBot</p>
+elif xx:
 
-<p><br></p>
+else:
+    xx
+#判断
 
-<h4 id="帐号密码">帐号密码</h4>
 
-<p>默认帐号：robot</p>
+case xx：
 
-<p>密码：maker</p>
+of xx：
 
-<p><br></p>
+of xx：
 
-<h4 id="root权限">Root权限</h4>
+else：
+    xx
+##case语句
 
-<p>默认不设root权限，需设置root密码</p>
+while xx:
+    xx
+#while循环
 
-<p>命令：sudo passwd</p>
+for i in 1..100:
+    echo i
 
-<p>（PS：没开启root权限会连不上网络，ping不通）</p>
+for i in 1..&lt;100:
+    echo i
 
-<p><br></p>
+for i,j in xx:
+    echo xx
+#for循环
 
-<h4 id="网络连接">网络连接</h4>
+block xx:
+    xx
+#块语句
+break xx
+#跳出块
 
-<p>通过手机蓝牙上网重点提要</p>
 
-<p>1.手机开启蓝牙网络共享</p>
+when xx:
 
-<p>2.Ev3dev里，ipv4设置为DHCP模式</p>
+elif xx:
+
+else:
+    xx
+#和if差不多，但在编译期间计算
+
+proc xx(变量:类型):返回类型 =
+    xxx
+    result = xx
+    (return xx)
+#函数
+
+proc xx(变量:var 类型):返回类型 =
+    xxx
+#传入可变函数参数
+</code></pre>
 
                 </section>
             </article>
 
             
-                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2fev3%2f - %e4%b9%90%e9%ab%98Ev3%e5%bc%80%e5%8f%91%e7%ac%94%e8%ae%b0 by @your_twitter_id"><span class="icon-twitter"> tweet</span></a>
+                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2f1570514736%2f - Nim%e8%af%ad%e8%a8%80%e7%ac%94%e8%ae%b0 by @your_twitter_id"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -219,10 +268,6 @@
 
     
     
-    
-        <li>
-            <a href="/posts/1570514736/">Nim语言笔记<aside class="dates">Oct 8 2019</aside></a>
-        </li>
     
         <li>
             <a href="/posts/b_rank/">B站的排名算法<aside class="dates">Oct 7 2019</aside></a>
@@ -254,6 +299,10 @@
     
         <li>
             <a href="/posts/aiweb/">人工智能网站<aside class="dates">Feb 16 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/ev3/">乐高Ev3开发笔记<aside class="dates">Feb 14 2019</aside></a>
         </li>
     
         <li>
