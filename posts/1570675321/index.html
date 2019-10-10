@@ -13,8 +13,8 @@
     
   
   
-  <meta name="twitter:title" content="Nim语言笔记"/>
-  <meta name="twitter:description" content="如题"/>
+  <meta name="twitter:title" content="Shell嵌入Python代码"/>
+  <meta name="twitter:description" content="终于知道为什么python叫做胶水语言了！"/>
   
     <meta name="twitter:site" content="@your_twitter_id"/>
   
@@ -30,7 +30,7 @@
 		<meta name="author" content="作者官方网站">
 		<meta name="description" content="Site Description">
 		<meta name="generator" content="Hugo 0.55.6" />
-		<title>Nim语言笔记 &middot; SciFX</title>
+		<title>Shell嵌入Python代码 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
 		<link rel="stylesheet" href="https://scifx.github.io/css/highlight.css">
@@ -64,17 +64,23 @@
             <article>
                 <header>
                     <h1>
-                        Nim语言笔记
+                        Shell嵌入Python代码
                     </h1>
                     <h2 class="headline">
-                    Oct 8, 2019 14:05
-                    · 429 words
+                    Oct 10, 2019 10:42
+                    · 451 words
                     · 1 minute read
                       <span class="tags">
                       
                       
                           
-                              <a href="https://scifx.github.io/tags/nim%E8%AF%AD%E8%A8%80">Nim语言</a>
+                              <a href="https://scifx.github.io/tags/python">Python</a>
+                          
+                              <a href="https://scifx.github.io/tags/shell">shell</a>
+                          
+                              <a href="https://scifx.github.io/tags/%E8%84%9A%E6%9C%AC">脚本</a>
+                          
+                              <a href="https://scifx.github.io/tags/%E7%BC%96%E7%A8%8B">编程</a>
                           
                       
                       
@@ -83,172 +89,96 @@
                 </header>
                 
                   
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li><a href="#执行多行命令">执行多行命令</a></li>
+<li><a href="#带参数的命令">带参数的命令</a></li>
+<li><a href="#胶水语言">胶水语言</a></li>
+</ul>
+</nav>
+                    </div>
+                  
                 
                 <section id="post-body">
-                    <pre><code>let a=10;
-#创建常量(初始化后部不可变)
+                    
 
-const a=1;
-#创建常量(编译期计算定值)
+<blockquote>
+<p>python命令行执行代码</p>
+</blockquote>
 
-var a=10
-#创建变量
+<pre><code>#执行文件
+python &quot;文件名称&quot;
 
-let a:int=10
-#创建变量设置类型 int float string
+#执行模块，如果有__main__函数
+python -m &quot;模块名称&quot;
 
-var name=readLine(stdin)
-#用户输入
-
-var foo=[1，2，3，4，5]
-foo[0]=2
-echo foo[0..2]
-#数组
-
-var foo={1，2，3，4，5}
-#序列
-
-nil
-#空类型是nil
-
-$xx
-#转为字符串用$号
-
-discard
-#忽略，类似pass
-
-type
-    xx
-#定义新数据类型
-
-type
-    xx = enum
-        x,x,x,x
-var y=x
-#枚举类型(只允许特定值)
-
-type
-    x=range[0..5]
-#范围类型
-
-type
-    x= set[char]
-#集合类型
-
-type
-    x=array[0..5,int]
-
-low(x),high(x)
-#数组
-
-var x:seq[int]
-y=@[1,2,3,4,5,6]
-#序列
-
-var x:array[3,string]
-#开放数组
-
-var x:seq[string]
-#开放序列
-
-x[1..10]
-x[10..^1]
-#切片操作
-
-type
-    xx=object
-        x:类型
-var y=xx(x:xxx)
-#对象
-
-type
-    xx=tuple
-        x:类型
-        xx：类型
-y=tuple[x:xxx,xx:xxx]
-#元组
-
-type
-    Node = ref object
-      le, ri: Node
-      data: int
-  var
-    n: Node
-  new(n)
-  n.data = 9 
-#指针
-
-proc xx(x:int)=xxx
-
-proc yy(zz:proc (x:int))=
-    xxx
-    zz(xx)
-#程序类型
-
-if xx：
-
-elif xx:
-
-else:
-    xx
-#判断
-
-
-case xx：
-
-of xx：
-
-of xx：
-
-else：
-    xx
-##case语句
-
-while xx:
-    xx
-#while循环
-
-for i in 1..100:
-    echo i
-
-for i in 1..&lt;100:
-    echo i
-
-for i,j in xx:
-    echo xx
-#for循环
-
-block xx:
-    xx
-#块语句
-break xx
-#跳出块
-
-
-when xx:
-
-elif xx:
-
-else:
-    xx
-#和if差不多，但在编译期间计算
-
-proc xx(变量:类型):返回类型 =
-    xxx
-    result = xx
-    (return xx)
-#函数
-
-proc xx(变量:var 类型):返回类型 =
-    xxx
-#传入可变函数参数
+#直接执行代码
+python -c &quot;代码&quot;
 </code></pre>
+
+<p>我们这里来看下直接执行代码，这样可以把代码直接写到shell脚本里</p>
+
+<h1 id="执行多行命令">执行多行命令</h1>
+
+<pre><code class="language-shell">#这一段是python代码块
+
+script=&quot;
+for i in range(100):
+    print(i)
+&quot;
+
+#下面这段shell调用python执行命令
+
+python -c &quot;&quot;&quot;$script&quot;&quot;&quot;
+
+#输出效果
+0
+1
+...
+99
+</code></pre>
+
+<p>此处用三个引号是因为script定义好后，字符串前后的&rdquo;号被去掉了。所以要帮python命令补充前后单个引号,实际效果是“script”。</p>
+
+<h1 id="带参数的命令">带参数的命令</h1>
+
+<pre><code class="language-shell">#这一段是python代码
+script=&quot;
+import sys
+a=sys.argv
+for i in a:
+    print(i)
+&quot;
+
+#这一段shell调用python执行命令
+python -c &quot;&quot;&quot;$script&quot;&quot;&quot; hello world
+
+#输出效果
+-c
+hello
+world
+</code></pre>
+
+<p>sys.argv是传入的参数数组，所以sys.argv[1]就是hello</p>
+
+<pre><code>#备忘后续研究
+sys.stdin.readlines():
+</code></pre>
+
+<h1 id="胶水语言">胶水语言</h1>
+
+<p>由上可以看到，python可以很方便作为命令行的中间处理器。</p>
+
+<p>以上直接把shell和python粘一起了，python还可以粘上c扩展和dll等。</p>
+
+<p>够胶！</p>
 
                 </section>
             </article>
 
             
-                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2f1570514736%2f - Nim%e8%af%ad%e8%a8%80%e7%ac%94%e8%ae%b0 by @your_twitter_id"><span class="icon-twitter"> tweet</span></a>
+                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2f1570675321%2f - Shell%e5%b5%8c%e5%85%a5Python%e4%bb%a3%e7%a0%81 by @your_twitter_id"><span class="icon-twitter"> tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -270,7 +200,7 @@ proc xx(变量:var 类型):返回类型 =
     
     
         <li>
-            <a href="/posts/1570675321/">Shell嵌入Python代码<aside class="dates">Oct 10 2019</aside></a>
+            <a href="/posts/1570514736/">Nim语言笔记<aside class="dates">Oct 8 2019</aside></a>
         </li>
     
         <li>
