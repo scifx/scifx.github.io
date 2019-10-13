@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>命令行 on SciFX</title>
+    <link>https://scifx.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
+    <description>Recent content in 命令行 on SciFX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 11 Oct 2019 12:13:24 +0800</lastBuildDate>
+    
+	<atom:link href="https://scifx.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>电脑自动工作</title>
+      <link>https://scifx.github.io/posts/1570767203/</link>
+      <pubDate>Fri, 11 Oct 2019 12:13:24 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1570767203/</guid>
+      <description>win计划任务 schtasks 报错：无法加载列资源 原因：编码显示问题，默认936中文GBK编码 解决办法：chcp命令设置编码，输入chcp 437(美国编码</description>
+    </item>
+    
+  </channel>
+</rss>
