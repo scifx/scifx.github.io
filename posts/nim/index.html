@@ -16,20 +16,20 @@
   <meta name="twitter:title" content="关于Nim语言"/>
   <meta name="twitter:description" content="人生苦短，我用Python（Nim）"/>
   
-    <meta name="twitter:site" content="@your_twitter_id"/>
+    <meta name="twitter:site" content="@sci-fx"/>
   
   
   
   
-    <meta name="twitter:creator" content="@作者官方网站"/>
+    <meta name="twitter:creator" content="@scifx"/>
   
 
 
 
 		
-		<meta name="author" content="作者官方网站">
-		<meta name="description" content="Site Description">
-		<meta name="generator" content="Hugo 0.55.6" />
+		<meta name="author" content="scifx">
+		<meta name="description" content="发现世界，记录见闻，分享知识">
+		<meta name="generator" content="Hugo 0.68.3" />
 		<title>关于Nim语言 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
@@ -40,7 +40,11 @@
 		
 
 		
+		<link href="https://scifx.github.io/index.xml" rel="alternate" type="application/rss+xml" title="SciFX" />
+		
 
+		
+		<link rel="stylesheet" href="https://scifx.github.io/css/customCSS.css">
 		
 	</head>
 
@@ -52,10 +56,13 @@
 	
 	<a href='https://scifx.github.io/posts'>文章</a>
 	<a href='https://scifx.github.io/tags'>分类</a>
+	<a href='https://scifx.github.io/projects'>项目</a>
 	<a href='https://scifx.github.io/about'>关于</a>
 
 	
 
+	
+	<a class="cta" href="https://space.bilibili.com/232679770">订阅</a>
 	
 </nav>
 
@@ -68,7 +75,7 @@
                     </h1>
                     <h2 class="headline">
                     Oct 7, 2019 13:11
-                    · 1127 words
+                    · 1125 words
                     · 3 minute read
                       <span class="tags">
                       
@@ -85,65 +92,38 @@
                   
                     <div id="toc">
                       <nav id="TableOfContents">
-<ul>
-<li><a href="#简约-美观-实用">简约，美观，实用</a>
-<ul>
-<li><a href="#简约">简约</a></li>
-<li><a href="#美观">美观</a></li>
-<li><a href="#实用">实用</a></li>
-</ul></li>
-<li><a href="#两全其美">两全其美？</a></li>
-<li><a href="#结语">结语</a></li>
-<li><a href="#相关资源">相关资源</a></li>
-</ul>
+  <ul>
+    <li><a href="#简约">简约</a></li>
+    <li><a href="#美观">美观</a></li>
+    <li><a href="#实用">实用</a></li>
+  </ul>
 </nav>
                     </div>
                   
                 
                 <section id="post-body">
-                    
-
-<h1 id="简约-美观-实用">简约，美观，实用</h1>
-
+                    <h1 id="简约美观实用">简约，美观，实用</h1>
 <p>人们应该花更多时间在解决问题上，</p>
-
 <p>而不是纠结人为的规则。</p>
-
 <p>应以最小的代价，换取最高的效率，解决问题才是首要。</p>
-
 <p>在了解过很多门编程语言后，感觉Python最合我意。</p>
-
 <p>语法足够简单，没有太多奇怪的符号，第三方库足够多。</p>
-
 <p>这就满足三要素：简约，美观，实用</p>
-
 <p>让我们对比下Python，来看下Nim。</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h2 id="简约">简约</h2>
-
 <p>简约在我眼里就是，</p>
-
 <p>打声招呼就直接了当，</p>
-
 <p>说一句你好，能一句说完就别来一段。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#Python</span>
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;你好&#34;</span>)
 
-<pre><code class="language-python">#Python
-print(&quot;你好&quot;)
-
-#Nim
-echo “你好”
-</code></pre>
-
-<p>你看就这么简单，反观需要main和入口函数的语言，一句你好天荒地老呀。。。</p>
-
-<p><br></p>
-
+<span style="color:#75715e">#Nim</span>
+echo <span style="color:#960050;background-color:#1e0010">“你好”</span>
+</code></pre></div><p>你看就这么简单，反观需要main和入口函数的语言，一句你好天荒地老呀。。。</p>
+<!-- raw HTML omitted -->
 <h2 id="美观">美观</h2>
-
 <p>有的人不喜欢缩进式语言，但我可以告诉你，我为何我喜欢缩进。</p>
-
 <pre><code>如果你把代码段
 
 看作一张设计图
@@ -155,94 +135,61 @@ echo “你好”
 结构分明，清晰直观，眼睛舒适。
 
 因为对齐和间距不费力被眼睛下意识捕捉。
-</code></pre>
-
-<p>反观一堆花括号虽然逻辑界限分明，倘若缩进不好，还得从细节处审查代码块的边界，</p>
-
+</code></pre><p>反观一堆花括号虽然逻辑界限分明，倘若缩进不好，还得从细节处审查代码块的边界，</p>
 <p>还会常常遗漏掉花括号，并且不够直观，美观度太低。</p>
-
 <p>对称是一种美~</p>
-
 <p>如果你是美观派，可能就喜欢Python，当然也会喜欢Nim。</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h2 id="实用">实用</h2>
-
 <p>写代码是为了让计算机解决实际问题，这就是实用。</p>
-
 <p>Python实用之处建立在各式各样的第三方库。</p>
-
 <p>Python语法虽然简单，但你用函数得记得它们的位置。</p>
-
 <p>（通常函数会嵌套几层才能找到，会让人忘了函数在哪里。。。）</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#Python</span>
+<span style="color:#f92672">import</span> os<span style="color:#f92672">,</span>shutil
+os<span style="color:#f92672">.</span>chdir()<span style="color:#75715e">#设置当前路径</span>
+os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>abspath()<span style="color:#75715e">#返回绝对路径</span>
+shutil<span style="color:#f92672">.</span>move()<span style="color:#75715e">#移动文件</span>
 
-<pre><code class="language-python">#Python
-import os,shutil
-os.chdir()#设置当前路径
-os.path.abspath()#返回绝对路径
-shutil.move()#移动文件
+<span style="color:#75715e">#Nim</span>
+<span style="color:#f92672">import</span> os
+setCurrentDir()<span style="color:#75715e">#设置当前路径</span>
+absolutePath()<span style="color:#75715e">#返回绝对路径</span>
+moveFile()<span style="color:#75715e">#移动文件</span>
 
-#Nim
-import os
-setCurrentDir()#设置当前路径
-absolutePath()#返回绝对路径
-moveFile()#移动文件
-
-</code></pre>
-
-<p>可以看到，比起Python，Nim的标准库函数的嵌套很浅，而且命名很直观，就字面意思，更人性化。</p>
-
-<p><br></p>
-
+</code></pre></div><p>可以看到，比起Python，Nim的标准库函数的嵌套很浅，而且命名很直观，就字面意思，更人性化。</p>
+<!-- raw HTML omitted -->
 <h1 id="两全其美">两全其美？</h1>
-
 <p>从前面可以了解到，Nim在语法上有着不亚于Python的优雅。</p>
-
 <p>并且作为一门定位于系统级的编译型语言，有着C语言的速度，一般是Nim译为C语言后生成机器码的。</p>
-
 <p>因此和C语言的互操作性很好，相当于给C语言套上了一个易用的外壳，好比一个编译版的Python。</p>
-
 <p>也就理所当然地，Nim也可以直接操作内存，可生成动态链接库，如dll等。</p>
-
 <p>nimpy库可以生成pyd扩展，而且不受python版本的限制。（赞！）</p>
-
 <p>就这一点来说，对于弥补Python的劣势，Nim语言是一个很好的后援。</p>
-
 <p>但这并不表明Nim是两全其美的，除了第三方库比较少这个必经的问题外，个人觉得Nim的类型声明规则有点令人头大。</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h1 id="结语">结语</h1>
-
 <p>编程也是一门艺术~</p>
-
 <p>简约，美观，实用，快速</p>
-
 <p>才能让人专注于解决问题和创作！</p>
-
 <p>Nim语言看着还行，学习成本不高，可以做Python后援，期待后续发展~</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h1 id="相关资源">相关资源</h1>
-
-<p>Nim语言官网 <a href="https://nim-lang.org/">https://nim-lang.org/</a></p>
-
-<p>Nim语言中文社区   <a href="https://nim-cn.com/">https://nim-cn.com/</a></p>
-
-<p>Nim语言B站频道   <a href="https://space.bilibili.com/322022184/">https://space.bilibili.com/322022184/</a></p>
-
-<p>Nim中文社区Q群   624680081</p>
-
-<p><br></p>
+<p>Nim语言官网	https://nim-lang.org/</p>
+<p>Nim语言中文社区	https://nim-cn.com/</p>
+<p>Nim语言B站频道	https://space.bilibili.com/322022184/</p>
+<p>Nim中文社区Q群	624680081</p>
+<!-- raw HTML omitted -->
 
                 </section>
             </article>
 
             
-                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2fnim%2f - %e5%85%b3%e4%ba%8eNim%e8%af%ad%e8%a8%80 by @your_twitter_id"><span class="icon-twitter"> tweet</span></a>
-
+                <hr></hr>
+<span class="share-fx">分享</span>
+<span>&nbsp</span>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2fnim%2f - %e5%85%b3%e4%ba%8eNim%e8%af%ad%e8%a8%80 by @sci-fx"><span class="icon-twitter"> tweet</span></a>
+<span>&nbsp</span>
 <a class="facebook" href="#" onclick="
     window.open(
       'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
@@ -250,7 +197,12 @@ moveFile()#移动文件
       'width=626,height=436');
     return false;"><span class="icon-facebook-rect"> Share</span>
 </a>
+<span>&nbsp</span>
+<a class="weibo" href="http://service.weibo.com/share/share.php?title=https%3a%2f%2fscifx.github.io%2fposts%2fnim%2f - %e5%85%b3%e4%ba%8eNim%e8%af%ad%e8%a8%80 by @SciFX%e5%88%9b%e6%96%b0%e5%ae%9e%e9%aa%8c%e5%ae%a4&url=https%3a%2f%2fscifx.github.io%2fposts%2fnim%2f&pic=分享的图片">
+  <span class="icon-weibo"> 微博</span>
+</a>
 
+<hr></hr>
             
 
             
@@ -261,6 +213,10 @@ moveFile()#移动文件
 
     
     
+    
+        <li>
+            <a href="/posts/1571311218/">Python常用命令<aside class="dates">Oct 17 2019</aside></a>
+        </li>
     
         <li>
             <a href="/posts/1570767203/">电脑自动工作<aside class="dates">Oct 11 2019</aside></a>
@@ -296,10 +252,6 @@ moveFile()#移动文件
     
         <li>
             <a href="/posts/lab/">欢迎来到新奇有趣的实验室<aside class="dates">Apr 13 2019</aside></a>
-        </li>
-    
-        <li>
-            <a href="/posts/aiweb/">人工智能网站<aside class="dates">Feb 16 2019</aside></a>
         </li>
     
 </ul>

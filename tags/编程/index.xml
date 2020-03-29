@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>编程 on SciFX</title>
@@ -6,10 +6,19 @@
     <description>Recent content in 编程 on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 10 Oct 2019 10:42:02 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Oct 2019 19:20:19 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python常用命令</title>
+      <link>https://scifx.github.io/posts/1571311218/</link>
+      <pubDate>Thu, 17 Oct 2019 19:20:19 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1571311218/</guid>
+      <description>突然开窍 编程无非就是翻译再翻译 自己又健忘，定制自己的语言规则 nice！</description>
+    </item>
     
     <item>
       <title>Shell嵌入Python代码</title>

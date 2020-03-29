@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on SciFX</title>
@@ -6,10 +6,28 @@
     <description>Recent content in Tags on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 11 Oct 2019 12:13:24 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Oct 2019 19:20:19 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python</title>
+      <link>https://scifx.github.io/tags/python/</link>
+      <pubDate>Thu, 17 Oct 2019 19:20:19 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>编程</title>
+      <link>https://scifx.github.io/tags/%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Thu, 17 Oct 2019 19:20:19 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/tags/%E7%BC%96%E7%A8%8B/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>命令行</title>
@@ -30,38 +48,11 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://scifx.github.io/tags/python/</link>
-      <pubDate>Thu, 10 Oct 2019 10:42:02 +0800</pubDate>
-      
-      <guid>https://scifx.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>shell</title>
       <link>https://scifx.github.io/tags/shell/</link>
       <pubDate>Thu, 10 Oct 2019 10:42:02 +0800</pubDate>
       
       <guid>https://scifx.github.io/tags/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>编程</title>
-      <link>https://scifx.github.io/tags/%E7%BC%96%E7%A8%8B/</link>
-      <pubDate>Thu, 10 Oct 2019 10:42:02 +0800</pubDate>
-      
-      <guid>https://scifx.github.io/tags/%E7%BC%96%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>脚本</title>
-      <link>https://scifx.github.io/tags/%E8%84%9A%E6%9C%AC/</link>
-      <pubDate>Thu, 10 Oct 2019 10:42:02 +0800</pubDate>
-      
-      <guid>https://scifx.github.io/tags/%E8%84%9A%E6%9C%AC/</guid>
       <description></description>
     </item>
     

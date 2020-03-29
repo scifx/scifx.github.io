@@ -16,20 +16,20 @@
   <meta name="twitter:title" content="乐高Ev3开发笔记"/>
   <meta name="twitter:description" content="乐高Ev3开发遇到的那些坑"/>
   
-    <meta name="twitter:site" content="@your_twitter_id"/>
+    <meta name="twitter:site" content="@sci-fx"/>
   
   
   
   
-    <meta name="twitter:creator" content="@作者官方网站"/>
+    <meta name="twitter:creator" content="@scifx"/>
   
 
 
 
 		
-		<meta name="author" content="作者官方网站">
-		<meta name="description" content="Site Description">
-		<meta name="generator" content="Hugo 0.55.6" />
+		<meta name="author" content="scifx">
+		<meta name="description" content="发现世界，记录见闻，分享知识">
+		<meta name="generator" content="Hugo 0.68.3" />
 		<title>乐高Ev3开发笔记 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
@@ -40,7 +40,11 @@
 		
 
 		
+		<link href="https://scifx.github.io/index.xml" rel="alternate" type="application/rss+xml" title="SciFX" />
+		
 
+		
+		<link rel="stylesheet" href="https://scifx.github.io/css/customCSS.css">
 		
 	</head>
 
@@ -52,10 +56,13 @@
 	
 	<a href='https://scifx.github.io/posts'>文章</a>
 	<a href='https://scifx.github.io/tags'>分类</a>
+	<a href='https://scifx.github.io/projects'>项目</a>
 	<a href='https://scifx.github.io/about'>关于</a>
 
 	
 
+	
+	<a class="cta" href="https://space.bilibili.com/232679770">订阅</a>
 	
 </nav>
 
@@ -85,122 +92,73 @@
                   
                     <div id="toc">
                       <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#官方系统">官方系统</a>
-<ul>
-<li>
-<ul>
-<li><a href="#编程软件">编程软件</a></li>
-<li><a href="#手机控制软件">手机控制软件</a></li>
-</ul></li>
-</ul></li>
-<li><a href="#ev3dev">Ev3dev</a>
-<ul>
-<li>
-<ul>
-<li><a href="#ssh登陆工具">SSH登陆工具</a></li>
-<li><a href="#帐号密码">帐号密码</a></li>
-<li><a href="#root权限">Root权限</a></li>
-<li><a href="#网络连接">网络连接</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#官方系统">官方系统</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#ev3dev">Ev3dev</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
                     </div>
                   
                 
                 <section id="post-body">
-                    
-
-<h2 id="官方系统">官方系统</h2>
-
-<p><br></p>
-
+                    <h2 id="官方系统">官方系统</h2>
+<!-- raw HTML omitted -->
 <h4 id="编程软件">编程软件</h4>
-
 <p>PC：<strong>官网开发套件</strong>（基于Labview）</p>
-
 <p><a href="https://www.lego.com/en-us/mindstorms/downloads">https://www.lego.com/en-us/mindstorms/downloads</a></p>
-
 <p>Web：Makecode （不支持蓝牙）</p>
-
 <p><a href="https://makecode.mindstorms.com/">https://makecode.mindstorms.com/</a></p>
-
 <p>Web：Kodular （基于 App inventor，开发手机端App）（推荐）</p>
-
 <p><a href="https://www.kodular.io/">https://www.kodular.io/</a></p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h4 id="手机控制软件">手机控制软件</h4>
-
 <p>原理：能直接发送蓝牙控制代码控制和接收消息，无须Ev3块编程</p>
-
 <p>Commander</p>
-
 <p><a href="https://play.google.com/store/apps/details?id=com.lego.mindstorms.robotcommander">https://play.google.com/store/apps/details?id=com.lego.mindstorms.robotcommander</a></p>
-
 <p>Mindstroms Cunstom controller （推荐）</p>
-
 <p><a href="https://play.google.com/store/apps/details?id=com.stefan.mindstormscustomcontroller">https://play.google.com/store/apps/details?id=com.stefan.mindstormscustomcontroller</a></p>
-
 <p>Ev3 Numeric Remote</p>
-
 <p><a href="https://play.google.com/store/apps/details?id=com.EV3.Numeric">https://play.google.com/store/apps/details?id=com.EV3.Numeric</a></p>
-
 <p>Ev3 Mailbox Remote</p>
-
 <p><a href="https://play.google.com/store/apps/details?id=com.EV3.Mailbox">https://play.google.com/store/apps/details?id=com.EV3.Mailbox</a></p>
-
-<hr />
-
+<hr>
 <h2 id="ev3dev">Ev3dev</h2>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h4 id="ssh登陆工具">SSH登陆工具</h4>
-
 <p>PC：MobaXterm（推荐）、PuTTy</p>
-
 <p>手机：JuiceSSH、ConnectBot</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h4 id="帐号密码">帐号密码</h4>
-
 <p>默认帐号：robot</p>
-
 <p>密码：maker</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h4 id="root权限">Root权限</h4>
-
 <p>默认不设root权限，需设置root密码</p>
-
 <p>命令：sudo passwd</p>
-
 <p>（PS：没开启root权限会连不上网络，ping不通）</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h4 id="网络连接">网络连接</h4>
-
 <p>通过手机蓝牙上网重点提要</p>
-
 <p>1.手机开启蓝牙网络共享</p>
-
 <p>2.Ev3dev里，ipv4设置为DHCP模式</p>
 
                 </section>
             </article>
 
             
-                <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2fev3%2f - %e4%b9%90%e9%ab%98Ev3%e5%bc%80%e5%8f%91%e7%ac%94%e8%ae%b0 by @your_twitter_id"><span class="icon-twitter"> tweet</span></a>
-
+                <hr></hr>
+<span class="share-fx">分享</span>
+<span>&nbsp</span>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2fev3%2f - %e4%b9%90%e9%ab%98Ev3%e5%bc%80%e5%8f%91%e7%ac%94%e8%ae%b0 by @sci-fx"><span class="icon-twitter"> tweet</span></a>
+<span>&nbsp</span>
 <a class="facebook" href="#" onclick="
     window.open(
       'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
@@ -208,7 +166,12 @@
       'width=626,height=436');
     return false;"><span class="icon-facebook-rect"> Share</span>
 </a>
+<span>&nbsp</span>
+<a class="weibo" href="http://service.weibo.com/share/share.php?title=https%3a%2f%2fscifx.github.io%2fposts%2fev3%2f - %e4%b9%90%e9%ab%98Ev3%e5%bc%80%e5%8f%91%e7%ac%94%e8%ae%b0 by @SciFX%e5%88%9b%e6%96%b0%e5%ae%9e%e9%aa%8c%e5%ae%a4&url=https%3a%2f%2fscifx.github.io%2fposts%2fev3%2f&pic=分享的图片">
+  <span class="icon-weibo"> 微博</span>
+</a>
 
+<hr></hr>
             
 
             
@@ -219,6 +182,10 @@
 
     
     
+    
+        <li>
+            <a href="/posts/1571311218/">Python常用命令<aside class="dates">Oct 17 2019</aside></a>
+        </li>
     
         <li>
             <a href="/posts/1570767203/">电脑自动工作<aside class="dates">Oct 11 2019</aside></a>
@@ -254,10 +221,6 @@
     
         <li>
             <a href="/posts/2019623/">我回来啦!<aside class="dates">Jun 23 2019</aside></a>
-        </li>
-    
-        <li>
-            <a href="/posts/lab/">欢迎来到新奇有趣的实验室<aside class="dates">Apr 13 2019</aside></a>
         </li>
     
 </ul>
