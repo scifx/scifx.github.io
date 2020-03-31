@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 17 Oct 2019 19:20:19 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2020 20:51:58 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AHK自动整理桌面脚本</title>
+      <link>https://scifx.github.io/posts/1585659118/</link>
+      <pubDate>Tue, 31 Mar 2020 20:51:58 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1585659118/</guid>
+      <description>a:=[] ;FileSelectFolder,folder folder:=&amp;quot;C:\Users\Administrator\Desktop&amp;quot; Loop,%folder%\*.* { temp:=folder . &amp;quot;\files\&amp;quot; . &amp;quot;.&amp;quot; . A_LoopFileExt if not a.HasKey(%A_LoopFileExt%) FileCreateDir,%temp% a.Push(%A_LoopFileExt%) FileMove,%A_LoopFileFullPath%,%temp% } /* 创建数组a 选择文件夹并把路径存储到folder 循环文件夹里所有的文件（*.*作为通配符可以匹配所有文</description>
+    </item>
     
     <item>
       <title>Python常用命令</title>

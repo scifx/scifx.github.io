@@ -8,7 +8,7 @@
 		<meta name="author" content="scifx">
 		<meta name="description" content="发现世界，记录见闻，分享知识">
 		<meta name="generator" content="Hugo 0.68.3" />
-		<title>B站的排名算法 &middot; SciFX</title>
+		<title>AHK自动整理桌面脚本 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
 		<link rel="stylesheet" href="https://scifx.github.io/css/highlight.css">
@@ -49,21 +49,17 @@
             <article>
                 <header>
                     <h1>
-                        B站的排名算法
+                        AHK自动整理桌面脚本
                     </h1>
                     <h2 class="headline">
-                    Oct 7, 2019 19:50
-                    · 799 words
-                    · 2 minute read
+                    Mar 31, 2020 20:51
+                    · 325 words
+                    · 1 minute read
                       <span class="tags">
                       
                       
                           
-                              <a href="https://scifx.github.io/tags/b%E7%AB%99">B站</a>
-                          
-                              <a href="https://scifx.github.io/tags/%E5%B9%B2%E8%B4%A7">干货</a>
-                          
-                              <a href="https://scifx.github.io/tags/%E5%AE%9E%E7%94%A8">实用</a>
+                              <a href="https://scifx.github.io/tags/"></a>
                           
                       
                       
@@ -73,80 +69,42 @@
                 
                   
                     <div id="toc">
-                      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#bug权重">BUG权重</a></li>
-    <li><a href="#机制利用">机制利用</a></li>
-  </ul>
-</nav>
+                      <nav id="TableOfContents"></nav>
                     </div>
                   
                 
                 <section id="post-body">
-                    <!-- raw HTML omitted -->
-<blockquote>
-<p>作为一名B站UP主当然想要让自己的视频占据搜索的首页位置。</p>
-<p>那么利用好推荐算法的机制将会提升你视频的排名，提升曝光量~</p>
-<p>因为此前B站被泄露过网站源码，并且在github仍能下载到。</p>
-<p>于是我下载了一份，然后在文件&quot;academy_archive.go&quot;找到了下面的结果。</p>
-</blockquote>
-<!-- raw HTML omitted -->
-<h1 id="b站推荐算法">B站推荐算法</h1>
-<pre><code>视频=硬币*0.4+收藏*0.3+弹幕*0.4+评论*0.4+播放*0.25+点赞*0.4+分享*0.6
-最新视频（一天内发布）提权【总值*1.5】
+                    <pre><code class="language-autohotkey" data-lang="autohotkey">a:=[]
+;FileSelectFolder,folder
+folder:=&quot;C:\Users\Administrator\Desktop&quot;
+Loop,%folder%\*.*
+{
+temp:=folder . &quot;\files\&quot; . &quot;.&quot; . A_LoopFileExt
+if not a.HasKey(%A_LoopFileExt%)
+	FileCreateDir,%temp%
+	a.Push(%A_LoopFileExt%)
+FileMove,%A_LoopFileFullPath%,%temp%
+}
+/*
+创建数组a
+选择文件夹并把路径存储到folder
+循环文件夹里所有的文件（*.*作为通配符可以匹配所有文件）
+	设置临时变量temp为分类文件夹的完整路径
+	如果数组a里没有当前文件的扩展名
+		创建分类文件夹
+		并把扩展名添加到数组a中
+	把文件移动到分类文件夹中
 
-专栏=硬币*0.4+收藏*0.3+评论*0.4+阅读*0.25+点赞*0.4+分享*0.6
-最新专栏（一天内发布）提权【总值*1.5】
-</code></pre><!-- raw HTML omitted -->
-<h1 id="源码机制分析">源码机制分析</h1>
-<p>从源码上看,B站搜索排行是基于总体项目分值和权重的。</p>
-<table>
-<thead>
-<tr>
-<th>权重</th>
-<th>项目</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0.6</td>
-<td>分享</td>
-</tr>
-<tr>
-<td>0.4</td>
-<td>评论 点赞 硬币 弹幕</td>
-</tr>
-<tr>
-<td>0.3</td>
-<td>收藏</td>
-</tr>
-<tr>
-<td>0.25</td>
-<td>播放</td>
-</tr>
-</tbody>
-</table>
-<h2 id="bug权重">BUG权重</h2>
-<p>最新发布的视频（一天内发布）权重是上面所有分值加在一起后再乘以1.5倍！！</p>
-<p>也就是说，B站会给你一天时间的优先排名。</p>
-<p>因此，最新发布的视频很容易排在搜索结果的前面。</p>
-<p>你需要做的就是趁热打铁，趁着Bug加持把视频稳在一定的播放量。</p>
-<h2 id="机制利用">机制利用</h2>
-<p>所以你要做的就是</p>
-<p>把视频先分享到各个平台，不管是微博，朋友圈或是qq空间。</p>
-<p>分享的权重最高，即使没人看，多分享几次，你的分值上来了。</p>
-<p>点赞投币不用说，必须的。</p>
-<p>比较容易忽略的是弹幕和评论，积极讨论惹一下争议，你来我往分值就上去了。</p>
-<p>看见评论，不仅要回复，而且还要点赞，</p>
-<p>先不说这个点赞会不会计入分值，但你点赞了别人的评论，别人就可能会回到视频页面继续互动。</p>
-<p>又假如你评论置顶做了些变更，你取消点赞，然后再点赞，别人就会看到咯。（一般不建议这么做）</p>
-<p>收藏虽然分值低，但比起分享更引流，因为站外用户观看和操作都不便。</p>
-<p>播放嘛，貌似可以刷哦，即使不计入数据，但是观看人数会有显示，就显得很多人观看你的视频，</p>
-<p>人都有从众心理，你懂的。</p>
-<h1 id="结语">结语</h1>
-<p>如果觉得有帮助的话，那就帮本UP按此套路一条龙操作支持一下吧，哈哈！</p>
-<!-- raw HTML omitted -->
+思路；
+创建数组a，用于存储文件夹下所有出现过的文件扩展名，一开始为空。
+然后循环文件夹下所有的文件，取得它们的扩展名，并判断是否已经创建了扩展名文件夹。
+判断依据是，a数组为空，创建文件夹后，下一步就会把那类的文件扩展名添加到数组a之中。
+如果数组a里没有该扩展名，说明没有创建该文件夹。
+做完以上步骤后，肯定都有了各种扩展名的文件夹，接下来就把它们移动到对应的文件夹里。
 
+by @SciFX
+/*
+</code></pre>
                 </section>
             </article>
 
@@ -154,7 +112,7 @@
                 <hr></hr>
 <span class="share-fx">分享</span>
 <span>&nbsp</span>
-<a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2fb_rank%2f - B%e7%ab%99%e7%9a%84%e6%8e%92%e5%90%8d%e7%ae%97%e6%b3%95 by @sci-fx"><span class="icon-twitter"> tweet</span></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2f1585659118%2f - AHK%e8%87%aa%e5%8a%a8%e6%95%b4%e7%90%86%e6%a1%8c%e9%9d%a2%e8%84%9a%e6%9c%ac by @sci-fx"><span class="icon-twitter"> tweet</span></a>
 <span>&nbsp</span>
 <a class="facebook" href="#" onclick="
     window.open(
@@ -164,7 +122,7 @@
     return false;"><span class="icon-facebook-rect"> Share</span>
 </a>
 <span>&nbsp</span>
-<a class="weibo" href="http://service.weibo.com/share/share.php?title=https%3a%2f%2fscifx.github.io%2fposts%2fb_rank%2f - B%e7%ab%99%e7%9a%84%e6%8e%92%e5%90%8d%e7%ae%97%e6%b3%95 by @SciFX%e5%88%9b%e6%96%b0%e5%ae%9e%e9%aa%8c%e5%ae%a4&url=https%3a%2f%2fscifx.github.io%2fposts%2fb_rank%2f&pic=分享的图片">
+<a class="weibo" href="http://service.weibo.com/share/share.php?title=https%3a%2f%2fscifx.github.io%2fposts%2f1585659118%2f - AHK%e8%87%aa%e5%8a%a8%e6%95%b4%e7%90%86%e6%a1%8c%e9%9d%a2%e8%84%9a%e6%9c%ac by @SciFX%e5%88%9b%e6%96%b0%e5%ae%9e%e9%aa%8c%e5%ae%a4&url=https%3a%2f%2fscifx.github.io%2fposts%2f1585659118%2f&pic=分享的图片">
   <span class="icon-weibo"> 微博</span>
 </a>
 
@@ -181,10 +139,6 @@
     
     
         <li>
-            <a href="/posts/1585659118/">AHK自动整理桌面脚本<aside class="dates">Mar 31 2020</aside></a>
-        </li>
-    
-        <li>
             <a href="/posts/1571311218/">Python常用命令<aside class="dates">Oct 17 2019</aside></a>
         </li>
     
@@ -198,6 +152,10 @@
     
         <li>
             <a href="/posts/1570514736/">Nim语言笔记<aside class="dates">Oct 8 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/b_rank/">B站的排名算法<aside class="dates">Oct 7 2019</aside></a>
         </li>
     
         <li>
