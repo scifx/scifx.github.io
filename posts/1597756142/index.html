@@ -8,7 +8,7 @@
 		<meta name="author" content="scifx">
 		<meta name="description" content="发现世界，记录见闻，分享知识">
 		<meta name="generator" content="Hugo 0.68.3" />
-		<title>Shell嵌入Python代码 &middot; SciFX</title>
+		<title>手动解析下载腾讯视频 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
 		<link rel="stylesheet" href="https://scifx.github.io/css/highlight.css">
@@ -49,21 +49,21 @@
             <article>
                 <header>
                     <h1>
-                        Shell嵌入Python代码
+                        手动解析下载腾讯视频
                     </h1>
                     <h2 class="headline">
-                    Oct 10, 2019 10:42
-                    · 450 words
-                    · 1 minute read
+                    Aug 18, 2020 21:09
+                    · 589 words
+                    · 2 minute read
                       <span class="tags">
                       
                       
                           
-                              <a href="https://scifx.github.io/tags/python">Python</a>
+                              <a href="https://scifx.github.io/tags/%E4%B8%8B%E8%BD%BD">下载</a>
                           
-                              <a href="https://scifx.github.io/tags/shell">shell</a>
+                              <a href="https://scifx.github.io/tags/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91">腾讯视频</a>
                           
-                              <a href="https://scifx.github.io/tags/%E7%BC%96%E7%A8%8B">编程</a>
+                              <a href="https://scifx.github.io/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90">视频解析</a>
                           
                       
                       
@@ -73,64 +73,36 @@
                 
                   
                     <div id="toc">
-                      <nav id="TableOfContents"></nav>
+                      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#视频解析">视频解析</a></li>
+    <li><a href="#fdm下载">FDM下载</a></li>
+    <li><a href="#ffmpeg合并视频">FFmpeg合并视频</a></li>
+    <li><a href="#ffmpeg提取音频">FFmpeg提取音频</a></li>
+  </ul>
+</nav>
                     </div>
                   
                 
                 <section id="post-body">
                     <blockquote>
-<p>python命令行执行代码</p>
+<p>妈咪想我帮她下载某微信公众号里大悲咒的音频。</p>
 </blockquote>
-<pre><code>#执行文件
-python &quot;文件名称&quot;
+<h2 id="视频解析">视频解析</h2>
+<p>为此，我需要先获得原视频链接，我用电脑版登陆微信，右键选择用默认浏览器打开网页。  我用Chrome浏览器打开网页后，我右键页面，审查网页元素，来到Network选项，过滤器设置为media，侦听来自网页的音视频类型的文件。原视频是29分钟的，我发现视频被网站拆分为了几段视频传输。这意味着需要把所有视频下载下来，然后合并为一个视频。</p>
+<h2 id="fdm下载">FDM下载</h2>
+<p>于是我用两倍速度，让视频跑一遍，然后得出了所有分段视频的地址。于是我右键在网页用FDM下载所有视频，然后共有5段视频被下载下来了。</p>
+<h2 id="ffmpeg合并视频">FFmpeg合并视频</h2>
+<p>视频下载下来后，我用ffmpeg把这几段视频合并为一个视频。如果用传统视频编缉软件，实在太慢了。所以我用ffmpeg敲几个命令就搞定。此次合并视频的ffmpeg命令是：  ffmpeg -f concat -safe 0  filelist.txt -c copy output.mp4  在这里filelist.txt里写着要合并的视频文件列表，格式类似于</p>
+<pre><code>file 1.mp4
 
-#执行模块，如果有__main__函数
-python -m &quot;模块名称&quot;
+file 2.mp4
 
-#直接执行代码
-python -c &quot;代码&quot;
-</code></pre><p>我们这里来看下直接执行代码，这样可以把代码直接写到shell脚本里</p>
-<h1 id="执行多行命令">执行多行命令</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#这一段是python代码块</span>
-
-script<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;
-</span><span style="color:#e6db74">for i in range(100):
-</span><span style="color:#e6db74">    print(i)
-</span><span style="color:#e6db74">&#34;</span>
-
-<span style="color:#75715e">#下面这段shell调用python执行命令</span>
-
-python -c <span style="color:#e6db74">&#34;&#34;&#34;</span>$script<span style="color:#e6db74">&#34;&#34;&#34;</span>
-
-<span style="color:#75715e">#输出效果</span>
-<span style="color:#ae81ff">0</span>
-<span style="color:#ae81ff">1</span>
-...
-<span style="color:#ae81ff">99</span>
-</code></pre></div><p>此处用三个引号是因为script定义好后，字符串前后的&quot;号被去掉了。所以要帮python命令补充前后单个引号,实际效果是“script”。</p>
-<h1 id="带参数的命令">带参数的命令</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#这一段是python代码</span>
-script<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;
-</span><span style="color:#e6db74">import sys
-</span><span style="color:#e6db74">a=sys.argv
-</span><span style="color:#e6db74">for i in a:
-</span><span style="color:#e6db74">    print(i)
-</span><span style="color:#e6db74">&#34;</span>
-
-<span style="color:#75715e">#这一段shell调用python执行命令</span>
-python -c <span style="color:#e6db74">&#34;&#34;&#34;</span>$script<span style="color:#e6db74">&#34;&#34;&#34;</span> hello world
-
-<span style="color:#75715e">#输出效果</span>
--c
-hello
-world
-</code></pre></div><p>sys.argv是传入的参数数组，所以sys.argv[1]就是hello</p>
-<pre><code>#备忘后续研究
-sys.stdin.readlines():
-</code></pre><h1 id="胶水语言">胶水语言</h1>
-<p>由上可以看到，python可以很方便作为命令行的中间处理器。</p>
-<p>以上直接把shell和python粘一起了，python还可以粘上c扩展和dll等。</p>
-<p>够胶！</p>
+file 3.mp4
+</code></pre><h2 id="ffmpeg提取音频">FFmpeg提取音频</h2>
+<p>上面一步在几秒时间内就把五段视频合并生成了一个output.mp4文件，多方便呐！接下来呢，就是提取音频，也是敲几行命令。  ffmpeg -i output.mp4 -nv output.mp3  这样-nv意思是not video的意思，就是忽略视频。这样就成功从视频里提取出了一个mp3音频文件。</p>
+<hr>
+<p>那么到这里任务就完成啦！我把这个音频文件，放到u盘里，插到收音机里，就可以播放了。(收音机是我母亲的佛友送的，感谢哈！</p>
 
                 </section>
             </article>
@@ -139,7 +111,7 @@ sys.stdin.readlines():
                 <hr></hr>
 <span class="share-fx">分享</span>
 <span>&nbsp</span>
-<a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2f1570675321%2f - Shell%e5%b5%8c%e5%85%a5Python%e4%bb%a3%e7%a0%81 by @sci-fx"><span class="icon-twitter"> tweet</span></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2f1597756142%2f - %e6%89%8b%e5%8a%a8%e8%a7%a3%e6%9e%90%e4%b8%8b%e8%bd%bd%e8%85%be%e8%ae%af%e8%a7%86%e9%a2%91 by @sci-fx"><span class="icon-twitter"> tweet</span></a>
 <span>&nbsp</span>
 <a class="facebook" href="#" onclick="
     window.open(
@@ -149,7 +121,7 @@ sys.stdin.readlines():
     return false;"><span class="icon-facebook-rect"> Share</span>
 </a>
 <span>&nbsp</span>
-<a class="weibo" href="http://service.weibo.com/share/share.php?title=https%3a%2f%2fscifx.github.io%2fposts%2f1570675321%2f - Shell%e5%b5%8c%e5%85%a5Python%e4%bb%a3%e7%a0%81 by @SciFX%e5%88%9b%e6%96%b0%e5%ae%9e%e9%aa%8c%e5%ae%a4&url=https%3a%2f%2fscifx.github.io%2fposts%2f1570675321%2f&pic=分享的图片">
+<a class="weibo" href="http://service.weibo.com/share/share.php?title=https%3a%2f%2fscifx.github.io%2fposts%2f1597756142%2f - %e6%89%8b%e5%8a%a8%e8%a7%a3%e6%9e%90%e4%b8%8b%e8%bd%bd%e8%85%be%e8%ae%af%e8%a7%86%e9%a2%91 by @SciFX%e5%88%9b%e6%96%b0%e5%ae%9e%e9%aa%8c%e5%ae%a4&url=https%3a%2f%2fscifx.github.io%2fposts%2f1597756142%2f&pic=分享的图片">
   <span class="icon-weibo"> 微博</span>
 </a>
 
@@ -166,10 +138,6 @@ sys.stdin.readlines():
     
     
         <li>
-            <a href="/posts/1597756142/">手动解析下载腾讯视频<aside class="dates">Aug 18 2020</aside></a>
-        </li>
-    
-        <li>
             <a href="/posts/1585659118/">AHK自动整理桌面脚本<aside class="dates">Mar 31 2020</aside></a>
         </li>
     
@@ -179,6 +147,10 @@ sys.stdin.readlines():
     
         <li>
             <a href="/posts/1570767203/">电脑自动工作<aside class="dates">Oct 11 2019</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/1570675321/">Shell嵌入Python代码<aside class="dates">Oct 10 2019</aside></a>
         </li>
     
         <li>

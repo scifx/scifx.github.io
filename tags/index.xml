@@ -6,10 +6,46 @@
     <description>Recent content in Tags on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 17 Oct 2019 19:20:19 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 21:09:02 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>下载</title>
+      <link>https://scifx.github.io/tags/%E4%B8%8B%E8%BD%BD/</link>
+      <pubDate>Tue, 18 Aug 2020 21:09:02 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/tags/%E4%B8%8B%E8%BD%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>腾讯视频</title>
+      <link>https://scifx.github.io/tags/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91/</link>
+      <pubDate>Tue, 18 Aug 2020 21:09:02 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/tags/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>视频</title>
+      <link>https://scifx.github.io/tags/%E8%A7%86%E9%A2%91/</link>
+      <pubDate>Tue, 18 Aug 2020 21:09:02 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/tags/%E8%A7%86%E9%A2%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>视频解析</title>
+      <link>https://scifx.github.io/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Tue, 18 Aug 2020 21:09:02 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Python</title>
@@ -138,15 +174,6 @@
     </item>
     
     <item>
-      <title>视频</title>
-      <link>https://scifx.github.io/tags/%E8%A7%86%E9%A2%91/</link>
-      <pubDate>Thu, 15 Aug 2019 11:02:53 +0800</pubDate>
-      
-      <guid>https://scifx.github.io/tags/%E8%A7%86%E9%A2%91/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Blender</title>
       <link>https://scifx.github.io/tags/blender/</link>
       <pubDate>Wed, 14 Aug 2019 21:13:04 +0800</pubDate>
@@ -188,15 +215,6 @@
       <pubDate>Thu, 14 Feb 2019 23:05:33 +0800</pubDate>
       
       <guid>https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>视频解析</title>
-      <link>https://scifx.github.io/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/</link>
-      <pubDate>Mon, 05 Nov 2018 13:50:06 +0800</pubDate>
-      
-      <guid>https://scifx.github.io/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 31 Mar 2020 20:51:58 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 21:09:02 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>手动解析下载腾讯视频</title>
+      <link>https://scifx.github.io/posts/1597756142/</link>
+      <pubDate>Tue, 18 Aug 2020 21:09:02 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1597756142/</guid>
+      <description>妈咪想我帮她下载某微信公众号里大悲咒的音频。 视频解析 为此，我需要先获得原视频链接，我用电脑版登陆微信，右键选择用默认浏览器打开网页。 我用Ch</description>
+    </item>
     
     <item>
       <title>AHK自动整理桌面脚本</title>
