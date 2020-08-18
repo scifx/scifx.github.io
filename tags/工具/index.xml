@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on SciFX</title>
+    <link>https://scifx.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on SciFX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 18 Aug 2020 21:20:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://scifx.github.io/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>一个超级便捷强大的桌面工具的设想</title>
+      <link>https://scifx.github.io/posts/1597756816/</link>
+      <pubDate>Tue, 18 Aug 2020 21:20:16 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1597756816/</guid>
+      <description>受blender的组合式快捷键和命令行的管道启发，我想尝试做一个很方便的程序。 构想 一个按键就是一块积木，只要组合一系列按键就可以无需编程实现</description>
+    </item>
+    
+  </channel>
+</rss>
