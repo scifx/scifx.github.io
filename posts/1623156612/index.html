@@ -8,7 +8,7 @@
 		<meta name="author" content="scifx">
 		<meta name="description" content="发现世界，记录见闻，分享知识">
 		<meta name="generator" content="Hugo 0.68.3" />
-		<title>Python好用的库 &middot; SciFX</title>
+		<title>Nimble改国内下载源 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
 		<link rel="stylesheet" href="https://scifx.github.io/css/highlight.css">
@@ -49,17 +49,19 @@
             <article>
                 <header>
                     <h1>
-                        Python好用的库
+                        Nimble改国内下载源
                     </h1>
                     <h2 class="headline">
-                    Jun 4, 2021 22:12
-                    · 25 words
-                    · 1 minute read
+                    Jun 8, 2021 20:50
+                    · 518 words
+                    · 2 minute read
                       <span class="tags">
                       
                       
                           
-                              <a href="https://scifx.github.io/tags/python">Python</a>
+                              <a href="https://scifx.github.io/tags/nim%E8%AF%AD%E8%A8%80">Nim语言</a>
+                          
+                              <a href="https://scifx.github.io/tags/nimble">Nimble</a>
                           
                               <a href="https://scifx.github.io/tags/%E7%BC%96%E7%A8%8B">编程</a>
                           
@@ -71,54 +73,72 @@
                 
                   
                     <div id="toc">
-                      <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#heading"></a></li>
-      </ul>
-    </li>
-    <li><a href="#gui">GUI:</a></li>
-    <li><a href="#图像处理">图像处理</a>
-      <ul>
-        <li><a href="#simplecvhttpsgithubcomsightmachinesimplecv"><a href="https://github.com/sightmachine/SimpleCV">SimpleCV</a></a></li>
-        <li><a href="#nuklearhttpsgithubcomimmediate-mode-uinuklear"><a href="https://github.com/Immediate-Mode-UI/Nuklear">Nuklear</a></a></li>
-      </ul>
-    </li>
-    <li><a href="#键盘鼠标">键盘鼠标</a>
-      <ul>
-        <li><a href="#pyautoguihttpsgithubcomasweigartpyautogui"><a href="https://github.com/asweigart/pyautogui">pyautogui</a></a></li>
-        <li><a href="#dearpyguihttpsgithubcomhoffstadtdearpygui"><a href="https://github.com/hoffstadt/DearPyGui">DearPyGui</a></a></li>
-        <li><a href="#keyboardhttpsgithubcombopprehkeyboard"><a href="https://github.com/boppreh/keyboard">keyboard</a></a></li>
-      </ul>
-    </li>
-    <li><a href="#命令行">命令行</a>
-      <ul>
-        <li><a href="#python-firehttpsgithubcomgooglepython-fire"><a href="https://github.com/google/python-fire">python-fire</a></a></li>
-      </ul>
-    </li>
-    <li><a href="#电子邮件">电子邮件</a></li>
-  </ul>
-</nav>
+                      <nav id="TableOfContents"></nav>
                     </div>
                   
                 
                 <section id="post-body">
-                    <h3 id="heading"></h3>
-<h2 id="gui">GUI:</h2>
-<p>pysimplegui</p>
-<p>splinter</p>
-<h2 id="图像处理">图像处理</h2>
-<h3 id="simplecvhttpsgithubcomsightmachinesimplecv"><a href="https://github.com/sightmachine/SimpleCV">SimpleCV</a></h3>
-<h3 id="nuklearhttpsgithubcomimmediate-mode-uinuklear"><a href="https://github.com/Immediate-Mode-UI/Nuklear">Nuklear</a></h3>
-<h2 id="键盘鼠标">键盘鼠标</h2>
-<h3 id="pyautoguihttpsgithubcomasweigartpyautogui"><a href="https://github.com/asweigart/pyautogui">pyautogui</a></h3>
-<h3 id="dearpyguihttpsgithubcomhoffstadtdearpygui"><a href="https://github.com/hoffstadt/DearPyGui">DearPyGui</a></h3>
-<h3 id="keyboardhttpsgithubcombopprehkeyboard"><a href="https://github.com/boppreh/keyboard">keyboard</a></h3>
-<h2 id="命令行">命令行</h2>
-<h3 id="python-firehttpsgithubcomgooglepython-fire"><a href="https://github.com/google/python-fire">python-fire</a></h3>
-<h2 id="电子邮件">电子邮件</h2>
-<p>yagmail</p>
+                    <blockquote>
+<p>首先确保你在官方下载了nim程序，此处我用nim的windows版本做示例</p>
+<p>如果已经安装的，请来到程序目录下</p>
+</blockquote>
+<hr>
+<h1 id="修改downloadnim文件">修改download.nim文件</h1>
+<ul>
+<li><strong>依照下面文件路径找到文件</strong></li>
+</ul>
+<p><code>nim\dist\nimble\src\nimblepkg\download.nim</code></p>
+<ul>
+<li><strong>打开文件，找到段落替换一下，此处只需要复制粘贴即可。</strong></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nim" data-lang="nim">  <span style="color:#66d9ef">if</span> modUrl.contains(<span style="color:#e6db74">&#34;github.com&#34;</span>) <span style="color:#f92672">and</span> modUrl.endswith(<span style="color:#e6db74">&#34;/&#34;</span>):
+    modUrl <span style="color:#f92672">=</span> modUrl<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span> .. ^<span style="color:#ae81ff">2</span><span style="color:#f92672">]</span>
+</code></pre></div><ul>
+<li><strong>替换为</strong></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nim" data-lang="nim"> <span style="color:#66d9ef">if</span> modUrl.contains(<span style="color:#e6db74">&#34;github.com&#34;</span>):
+  modUrl <span style="color:#f92672">=</span> modUrl.replace(<span style="color:#e6db74">&#34;github.com&#34;</span>,<span style="color:#e6db74">&#34;github.com.cnpmjs.org&#34;</span>)
+  <span style="color:#66d9ef">if</span> modUrl.endswith(<span style="color:#e6db74">&#34;/&#34;</span>):
+   modUrl <span style="color:#f92672">=</span> modUrl<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span> .. ^<span style="color:#ae81ff">2</span><span style="color:#f92672">]</span>
+</code></pre></div><p>本质上是把&quot;github.com&quot;后面加上&quot;cnpmjs.org&rdquo;,从而切换为国内的地址。</p>
+<hr>
+<h1 id="执行编译">执行编译</h1>
+<ul>
+<li>
+<p><strong>然后来到上两级文件夹<code>nim\dist\nimble\src</code></strong></p>
+</li>
+<li>
+<p><strong>运行编译命令</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nim" data-lang="nim">nim c <span style="color:#f92672">-</span>d:release download.nim
+</code></pre></div><p>然后将会得到<code>nimble.exe</code></p>
+<hr>
+<h1 id="复制替换文件">复制替换文件</h1>
+<ul>
+<li>把编译得到的nimble.exe复制到程序路径下的<code>nim\bin</code>替换原程序即可。</li>
+</ul>
+<hr>
+<h1 id="小tips">小Tips</h1>
+<p>为了以防万一，我灵活切换国内和国外两个源。</p>
+<ul>
+<li><strong>于是，我把编译得来得<code>nimble.exe</code>重命名为<code>nimblecn.exe</code></strong></li>
+</ul>
+<p>这样就两者兼得了！</p>
+<p>如果遇到实在是很难装上的包，可以把命令行输出显示的<code>Installing</code>字段左边找到包地址</p>
+<p>例如<code>Installing https://github.com/**</code></p>
+<ul>
+<li>
+<p>用手动下载，比git clone快很多。</p>
+</li>
+<li>
+<p>下载完成后，来到文件夹下，执行</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nim" data-lang="nim">nimble install
+</code></pre></div><hr>
+<p>备注：源方法来自Nim中文社区<strong>Sheldon</strong>大佬指点，此处备忘！</p>
+<p>Nim中文社区Q群：<strong>624680081</strong></p>
 
                 </section>
             </article>
@@ -127,7 +147,7 @@
                 <hr></hr>
 <span class="share-fx">分享</span>
 <span>&nbsp</span>
-<a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2f1622815978%2f - Python%e5%a5%bd%e7%94%a8%e7%9a%84%e5%ba%93 by @sci-fx"><span class="icon-twitter"> tweet</span></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2f1623156612%2f - Nimble%e6%94%b9%e5%9b%bd%e5%86%85%e4%b8%8b%e8%bd%bd%e6%ba%90 by @sci-fx"><span class="icon-twitter"> tweet</span></a>
 <span>&nbsp</span>
 <a class="facebook" href="#" onclick="
     window.open(
@@ -137,7 +157,7 @@
     return false;"><span class="icon-facebook-rect"> Share</span>
 </a>
 <span>&nbsp</span>
-<a class="weibo" href="http://service.weibo.com/share/share.php?title=https%3a%2f%2fscifx.github.io%2fposts%2f1622815978%2f - Python%e5%a5%bd%e7%94%a8%e7%9a%84%e5%ba%93 by @SciFX%e5%88%9b%e6%96%b0%e5%ae%9e%e9%aa%8c%e5%ae%a4&url=https%3a%2f%2fscifx.github.io%2fposts%2f1622815978%2f&pic=分享的图片">
+<a class="weibo" href="http://service.weibo.com/share/share.php?title=https%3a%2f%2fscifx.github.io%2fposts%2f1623156612%2f - Nimble%e6%94%b9%e5%9b%bd%e5%86%85%e4%b8%8b%e8%bd%bd%e6%ba%90 by @SciFX%e5%88%9b%e6%96%b0%e5%ae%9e%e9%aa%8c%e5%ae%a4&url=https%3a%2f%2fscifx.github.io%2fposts%2f1623156612%2f&pic=分享的图片">
   <span class="icon-weibo"> 微博</span>
 </a>
 
@@ -154,7 +174,7 @@
     
     
         <li>
-            <a href="/posts/1623156612/">Nimble改国内下载源<aside class="dates">Jun 8 2021</aside></a>
+            <a href="/posts/1622815978/">Python好用的库<aside class="dates">Jun 4 2021</aside></a>
         </li>
     
         <li>
