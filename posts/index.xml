@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 20 Jul 2022 21:41:28 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 21 Jul 2022 20:16:58 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Real-GUI</title>
+      <link>https://scifx.github.io/posts/1658405818/</link>
+      <pubDate>Thu, 21 Jul 2022 20:16:58 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1658405818/</guid>
+      <description>Real-GUI 简单易用的图像分辨率放大软件(基于Real-ESRGAN) 概述 本项目基于可以将低清图像转化为高清图像的项目Real-ESRGAN 提供了对普</description>
+    </item>
     
     <item>
       <title>现在需要做什么？</title>
