@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Jul 2022 21:31:36 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jul 2022 22:44:59 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Arturo语言的评测</title>
+      <link>https://scifx.github.io/posts/1659278699/</link>
+      <pubDate>Sun, 31 Jul 2022 22:44:59 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1659278699/</guid>
+      <description>我写了文件内容搜索的测试 用Nim、Python、Arturo、Autohotkey一共四种语言写了 测试数据： 代码量（行 Python（20+）</description>
+    </item>
     
     <item>
       <title>关于聊天中陷入思维漩涡的问题</title>
