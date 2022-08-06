@@ -53,7 +53,7 @@
                     </h1>
                     <h2 class="headline">
                     Oct 8, 2019 14:05
-                    · 495 words
+                    · 429 words
                     · 1 minute read
                       <span class="tags">
                       
@@ -74,200 +74,164 @@
                   
                 
                 <section id="post-body">
-                    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nim" data-lang="nim"><span style="color:#75715e">#创建常量(初始化后部不可变)</span>
-<span style="color:#66d9ef">let</span> a<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>;
+                    <pre><code>let a=10;
+#创建常量(初始化后部不可变)
 
-<span style="color:#75715e">#创建常量(编译期计算定值)</span>
-<span style="color:#66d9ef">const</span> a<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>;
+const a=1;
+#创建常量(编译期计算定值)
 
-<span style="color:#75715e">#创建变量</span>
-<span style="color:#66d9ef">var</span> a<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
+var a=10
+#创建变量
 
-<span style="color:#75715e">#创建变量设置类型 int float string</span>
-<span style="color:#66d9ef">let</span> a:<span style="color:#66d9ef">int</span><span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
+let a:int=10
+#创建变量设置类型 int float string
 
-<span style="color:#75715e">#用户输入</span>
-<span style="color:#66d9ef">var</span> name<span style="color:#f92672">=</span>readLine(stdin)
+var name=readLine(stdin)
+#用户输入
 
-<span style="color:#75715e">#数组</span>
-<span style="color:#66d9ef">var</span> x<span style="color:#f92672">=[</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span><span style="color:#f92672">]</span>
-x<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]=</span><span style="color:#ae81ff">2</span>
-echo x<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span>..<span style="color:#ae81ff">2</span><span style="color:#f92672">]</span>
+var foo=[1，2，3，4，5]
+foo[0]=2
+echo foo[0..2]
+#数组
 
+var foo={1，2，3，4，5}
+#序列
 
+nil
+#空类型是nil
 
-<span style="color:#75715e">#空类型是nil</span>
-<span style="color:#66d9ef">nil</span>
+$xx
+#转为字符串用$号
 
-<span style="color:#75715e">#转为字符串用$号</span>
-<span style="color:#f92672">$</span>x
+discard
+#忽略，类似pass
 
-<span style="color:#75715e">#忽略，类似pass</span>
-<span style="color:#66d9ef">discard</span>
-
-<span style="color:#75715e">#定义新数据类型</span>
-<span style="color:#66d9ef">type</span>
+type
     xx
+#定义新数据类型
 
-<span style="color:#75715e">#枚举类型(只允许特定值)</span>
-<span style="color:#66d9ef">type</span>
-    E <span style="color:#f92672">=</span> <span style="color:#66d9ef">enum</span>
-        x,y,z
-<span style="color:#66d9ef">let</span> a<span style="color:#f92672">=</span>x
+type
+    xx = enum
+        x,x,x,x
+var y=x
+#枚举类型(只允许特定值)
 
-<span style="color:#75715e">#范围类型</span>
-<span style="color:#66d9ef">type</span>
-    x<span style="color:#f92672">=</span><span style="color:#66d9ef">range</span><span style="color:#f92672">[</span><span style="color:#ae81ff">0</span>..<span style="color:#ae81ff">5</span><span style="color:#f92672">]</span>
+type
+    x=range[0..5]
+#范围类型
 
-<span style="color:#75715e">#集合类型</span>
-<span style="color:#66d9ef">let</span> x<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;a&#39;</span>,<span style="color:#e6db74">&#39;b&#39;</span>,<span style="color:#e6db74">&#39;c&#39;</span>}
-<span style="color:#66d9ef">let</span> y:<span style="color:#66d9ef">set</span><span style="color:#f92672">[</span><span style="color:#66d9ef">char</span><span style="color:#f92672">]=</span>{<span style="color:#e6db74">&#39;a&#39;</span>,<span style="color:#e6db74">&#39;b&#39;</span>,<span style="color:#e6db74">&#39;c&#39;</span>}
+type
+    x= set[char]
+#集合类型
 
+type
+    x=array[0..5,int]
 
-<span style="color:#75715e">#数组  </span>
-<span style="color:#66d9ef">let</span> x<span style="color:#f92672">=[</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">let</span> y:<span style="color:#66d9ef">array</span><span style="color:#f92672">[</span><span style="color:#ae81ff">0</span>..<span style="color:#ae81ff">5</span>,<span style="color:#66d9ef">int</span><span style="color:#f92672">]=[</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span><span style="color:#f92672">]</span>
 low(x),high(x)
+#数组
 
+var x:seq[int]
+y=@[1,2,3,4,5,6]
+#序列
 
-<span style="color:#75715e">#序列</span>
-<span style="color:#66d9ef">let</span> x <span style="color:#f92672">=</span> <span style="color:#f92672">@[</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">let</span> y:<span style="color:#66d9ef">seq</span><span style="color:#f92672">[</span><span style="color:#66d9ef">int</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#f92672">@[</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span><span style="color:#f92672">]</span>
+var x:array[3,string]
+#开放数组
 
-<span style="color:#75715e"># 只能作为函数参数</span>
-<span style="color:#75715e">#开放数组</span>
-<span style="color:#66d9ef">proc </span><span style="color:#a6e22e">hi</span>(x:openArray<span style="color:#f92672">[</span><span style="color:#66d9ef">string</span><span style="color:#f92672">]</span>)<span style="color:#f92672">=</span>
-    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> x:
-        echo i
+var x:seq[string]
+#开放序列
 
-<span style="color:#66d9ef">let</span> x<span style="color:#f92672">=[</span><span style="color:#e6db74">&#34;a&#34;</span>,<span style="color:#e6db74">&#34;b&#34;</span>,<span style="color:#e6db74">&#34;c&#34;</span><span style="color:#f92672">]</span>
-hi(x)
+x[1..10]
+x[10..^1]
+#切片操作
 
-<span style="color:#75715e">#开放序列</span>
-<span style="color:#66d9ef">var</span> x:<span style="color:#66d9ef">seq</span><span style="color:#f92672">[</span><span style="color:#66d9ef">string</span><span style="color:#f92672">]</span>
-
-
-<span style="color:#75715e">#切片操作</span>
-x<span style="color:#f92672">[</span><span style="color:#ae81ff">1</span>..<span style="color:#ae81ff">10</span><span style="color:#f92672">]</span>
-x<span style="color:#f92672">[</span><span style="color:#ae81ff">10</span>..^<span style="color:#ae81ff">1</span><span style="color:#f92672">]</span>
-
-<span style="color:#75715e">#对象</span>
-<span style="color:#66d9ef">type</span>
-    xx<span style="color:#f92672">=</span><span style="color:#66d9ef">object</span>
+type
+    xx=object
         x:类型
-<span style="color:#66d9ef">var</span> y<span style="color:#f92672">=</span>xx(x:xxx)
+var y=xx(x:xxx)
+#对象
 
-<span style="color:#75715e">#元组</span>
-<span style="color:#75715e"># type</span>
-<span style="color:#75715e">#     Dict=tuple</span>
-<span style="color:#75715e">#         a:int</span>
-<span style="color:#75715e">#         b:int</span>
-<span style="color:#66d9ef">let</span> x<span style="color:#f92672">=</span>(a:<span style="color:#ae81ff">1</span>,b:<span style="color:#ae81ff">2</span>)
+type
+    xx=tuple
+        x:类型
+        xx：类型
+y=tuple[x:xxx,xx:xxx]
+#元组
 
-<span style="color:#75715e">#跟踪指针</span>
-<span style="color:#66d9ef">var</span> x:<span style="color:#66d9ef">ref</span> <span style="color:#66d9ef">int</span>
-x.new
-x<span style="color:#f92672">[]=</span><span style="color:#ae81ff">10</span>
-echo x.repr
-<span style="color:#75715e"># type</span>
-<span style="color:#75715e">#     Node = ref object</span>
-<span style="color:#75715e">#       le, ri: Node</span>
-<span style="color:#75715e">#       data: int</span>
-<span style="color:#75715e">#   var</span>
-<span style="color:#75715e">#     n: Node</span>
-<span style="color:#75715e">#   new(n)</span>
-<span style="color:#75715e">#   n.data = 9 </span>
+type
+    Node = ref object
+      le, ri: Node
+      data: int
+  var
+    n: Node
+  new(n)
+  n.data = 9 
+#指针
 
-<span style="color:#75715e">#程序类型</span>
-<span style="color:#66d9ef">proc </span><span style="color:#a6e22e">xx</span>(x:<span style="color:#66d9ef">int</span>)<span style="color:#f92672">=</span>xxx
+proc xx(x:int)=xxx
 
-<span style="color:#66d9ef">proc </span><span style="color:#a6e22e">yy</span>(zz:<span style="color:#66d9ef">proc</span> (x:<span style="color:#66d9ef">int</span>))<span style="color:#f92672">=</span>
+proc yy(zz:proc (x:int))=
     xxx
     zz(xx)
+#程序类型
 
-<span style="color:#75715e">#判断</span>
-<span style="color:#66d9ef">if</span> xx<span style="color:#960050;background-color:#1e0010">：</span>
+if xx：
 
-<span style="color:#66d9ef">elif</span> xx:
+elif xx:
 
-<span style="color:#66d9ef">else</span>:
+else:
     xx
+#判断
 
 
-<span style="color:#e6db74">##case语句</span>
-<span style="color:#66d9ef">case</span> xx<span style="color:#960050;background-color:#1e0010">：</span>
+case xx：
 
-<span style="color:#66d9ef">of</span> xx<span style="color:#960050;background-color:#1e0010">：</span>
+of xx：
 
-<span style="color:#66d9ef">of</span> xx<span style="color:#960050;background-color:#1e0010">：</span>
+of xx：
 
-<span style="color:#66d9ef">else</span><span style="color:#960050;background-color:#1e0010">：</span>
+else：
     xx
+##case语句
 
-<span style="color:#75715e">#while循环</span>
-<span style="color:#66d9ef">while</span> xx:
+while xx:
     xx
+#while循环
 
-<span style="color:#75715e">#for循环</span>
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> <span style="color:#ae81ff">1</span>..<span style="color:#ae81ff">100</span>:
+for i in 1..100:
     echo i
 
-<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> <span style="color:#ae81ff">1</span>..<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">100</span>:
+for i in 1..&lt;100:
     echo i
 
-<span style="color:#66d9ef">for</span> i,j <span style="color:#f92672">in</span> xx:
+for i,j in xx:
     echo xx
+#for循环
 
-<span style="color:#75715e">#块语句</span>
-<span style="color:#66d9ef">block</span> xx:
+block xx:
     xx
-<span style="color:#75715e">#跳出块</span>
-<span style="color:#66d9ef">break</span> xx
+#块语句
+break xx
+#跳出块
 
 
-<span style="color:#75715e">#和if差不多，但在编译期间计算</span>
-<span style="color:#66d9ef">when</span> xx:
+when xx:
 
-<span style="color:#66d9ef">elif</span> xx:
+elif xx:
 
-<span style="color:#66d9ef">else</span>:
+else:
     xx
+#和if差不多，但在编译期间计算
 
-<span style="color:#75715e">#函数</span>
-<span style="color:#66d9ef">proc </span><span style="color:#a6e22e">xx</span>(变量:类型):返回类型 <span style="color:#f92672">=</span>
+proc xx(变量:类型):返回类型 =
     xxx
-    result <span style="color:#f92672">=</span> xx
-    (<span style="color:#66d9ef">return</span> xx)
+    result = xx
+    (return xx)
+#函数
 
-<span style="color:#75715e">#传入可变函数参数</span>
-<span style="color:#66d9ef">proc </span><span style="color:#a6e22e">xx</span>(变量:<span style="color:#66d9ef">var</span> 类型):返回类型 <span style="color:#f92672">=</span>
+proc xx(变量:var 类型):返回类型 =
     xxx
-
-<span style="color:#75715e">#泛型</span>
-<span style="color:#66d9ef">proc </span><span style="color:#a6e22e">foo</span><span style="color:#f92672">[</span>T<span style="color:#f92672">]</span>(x:T,y:T):T<span style="color:#f92672">=</span>
-    <span style="color:#66d9ef">return</span> x<span style="color:#f92672">+</span>y
-
-echo foo(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">2</span>)
-
-<span style="color:#75715e">#高级类型示例</span>
-<span style="color:#66d9ef">let</span> a<span style="color:#f92672">=</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>)
-<span style="color:#66d9ef">let</span> b<span style="color:#f92672">=[</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">let</span> x<span style="color:#f92672">=</span> <span style="color:#f92672">@[</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span><span style="color:#f92672">]</span>
-<span style="color:#66d9ef">let</span> y<span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>}
-<span style="color:#66d9ef">let</span> z<span style="color:#f92672">=</span> (a:<span style="color:#ae81ff">1</span>,b:<span style="color:#e6db74">&#34;test&#34;</span>,c:<span style="color:#e6db74">&#39;o&#39;</span>)
-
-echo a.typeof
-echo b.typeof
-echo x.typeof
-echo y.typeof
-echo z.typeof
-
-<span style="color:#75715e"># (int, int, int)</span>
-<span style="color:#75715e"># array[0..2, int]</span>
-<span style="color:#75715e"># seq[int]</span>
-<span style="color:#75715e"># set[range 0..65535(int)]</span>
-<span style="color:#75715e"># tuple[a: int, b: string, c: char]</span>
-</code></pre></div>
+#传入可变函数参数
+</code></pre>
                 </section>
             </article>
 
@@ -330,15 +294,15 @@ echo z.typeof
         </li>
     
         <li>
-            <a href="/posts/1623156612/">Nimble改国内下载源<aside class="dates">Jun 8 2021</aside></a>
-        </li>
-    
-        <li>
-            <a href="/posts/1622815978/">Python好用的库<aside class="dates">Jun 4 2021</aside></a>
-        </li>
-    
-        <li>
             <a href="/posts/1609240302/">关于如何赚钱<aside class="dates">Dec 29 2020</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/1597756816/">一个超级便捷强大的桌面工具的设想<aside class="dates">Aug 18 2020</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/1597756142/">手动解析下载腾讯视频<aside class="dates">Aug 18 2020</aside></a>
         </li>
     
 </ul>
