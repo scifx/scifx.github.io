@@ -6,10 +6,19 @@
     <description>Recent content in 编程 on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 31 Jul 2022 22:44:59 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Aug 2022 17:53:01 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Arturo语言</title>
+      <link>https://scifx.github.io/posts/1659779581/</link>
+      <pubDate>Sat, 06 Aug 2022 17:53:01 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1659779581/</guid>
+      <description>特性： 没有语法，关键字都可以变 格式没有限制，只认空格，所有代码都可以写在一行上</description>
+    </item>
     
     <item>
       <title>Arturo语言的评测</title>
