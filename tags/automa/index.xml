@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automa on SciFX</title>
+    <link>https://scifx.github.io/tags/automa/</link>
+    <description>Recent content in Automa on SciFX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 16 Aug 2022 14:29:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://scifx.github.io/tags/automa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automa网页自动化神器</title>
+      <link>https://scifx.github.io/posts/1660631387/</link>
+      <pubDate>Tue, 16 Aug 2022 14:29:47 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1660631387/</guid>
+      <description>Automa不仅支持节点 还可以配合js脚本使用 但学起来也有难点 这里稍微备忘一下。 变量 最难理解的当属变量！ Automa的变量用{{}}访问 有全</description>
+    </item>
+    
+  </channel>
+</rss>
