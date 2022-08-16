@@ -6,10 +6,19 @@
     <description>Recent content in Godot on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 Aug 2022 10:59:47 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 16 Aug 2022 14:13:15 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/tags/godot/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Godot访问手机传感器</title>
+      <link>https://scifx.github.io/posts/1660630395/</link>
+      <pubDate>Tue, 16 Aug 2022 14:13:15 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1660630395/</guid>
+      <description>超级简单！ 官方文档地址 #加速度 var a= Input.get_accelerometer() #陀螺仪 var b= Input.get_gyroscope() #磁场 var c= Input.get_magnetometer() #重力 var d= Input.get_gravity() 返回值都是矢量数组(x,y,z)</description>
+    </item>
     
     <item>
       <title>Godot导出安卓应用</title>
