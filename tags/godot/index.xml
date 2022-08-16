@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Godot on SciFX</title>
+    <link>https://scifx.github.io/tags/godot/</link>
+    <description>Recent content in Godot on SciFX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 16 Aug 2022 10:59:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://scifx.github.io/tags/godot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Godot导出安卓应用</title>
+      <link>https://scifx.github.io/posts/1660618787/</link>
+      <pubDate>Tue, 16 Aug 2022 10:59:47 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1660618787/</guid>
+      <description>之前在windows导出过 但是windows下文件路径太散 不好组织 现在在linux环境下步骤比较明晰 *结合官方文档参考食用更佳：为Andor</description>
+    </item>
+    
+  </channel>
+</rss>

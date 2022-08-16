@@ -8,7 +8,7 @@
 		<meta name="author" content="scifx">
 		<meta name="description" content="发现世界，记录见闻，分享知识">
 		<meta name="generator" content="Hugo 0.68.3" />
-		<title>现在需要做什么？ &middot; SciFX</title>
+		<title>Godot导出安卓应用 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
 		<link rel="stylesheet" href="https://scifx.github.io/css/highlight.css">
@@ -49,17 +49,21 @@
             <article>
                 <header>
                     <h1>
-                        现在需要做什么？
+                        Godot导出安卓应用
                     </h1>
                     <h2 class="headline">
-                    Jul 20, 2022 21:41
-                    · 775 words
+                    Aug 16, 2022 10:59
+                    · 605 words
                     · 2 minute read
                       <span class="tags">
                       
                       
                           
-                              <a href="https://scifx.github.io/tags/%E9%9A%8F%E7%AC%94">随笔</a>
+                              <a href="https://scifx.github.io/tags/godot">Godot</a>
+                          
+                              <a href="https://scifx.github.io/tags/%E7%BC%96%E7%A8%8B">编程</a>
+                          
+                              <a href="https://scifx.github.io/tags/%E6%B8%B8%E6%88%8F">游戏</a>
                           
                       
                       
@@ -71,12 +75,14 @@
                     <div id="toc">
                       <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#1配置andorid-sdk环境">1.配置Andorid SDK环境</a>
       <ul>
-        <li><a href="#想在世界上留下什么">想在世界上留下什么？</a></li>
-        <li><a href="#想体验和经历的事情">想体验和经历的事情</a></li>
+        <li><a href="#下载sdk">下载SDK</a></li>
       </ul>
     </li>
+    <li><a href="#2添加andorid-keystore调试密钥库">2.添加Andorid Keystore（调试密钥库）</a></li>
+    <li><a href="#3设置godot编辑器">3.设置Godot编辑器</a></li>
+    <li><a href="#4导出apk">4.导出APK</a></li>
   </ul>
 </nav>
                     </div>
@@ -84,35 +90,41 @@
                 
                 <section id="post-body">
                     <blockquote>
-<p>时间其实并不存在，无所谓过去与未来</p>
-<p>活着就是要体验与留下</p>
-<p>我是谁并不重要，重要的是我做了什么</p>
-<p>根据前一篇文章说</p>
-<p>人终有一死</p>
-<p>活着是过程的体验与留下，并不能带走什么，所以要做的事情就是两种</p>
+<p>之前在windows导出过</p>
+<p>但是windows下文件路径太散</p>
+<p>不好组织</p>
+<p>现在在linux环境下步骤比较明晰</p>
 </blockquote>
+<p>*结合官方文档参考食用更佳：<a href="https://docs.godotengine.org/zh_CN/stable/development/compiling/compiling_for_android.html#note">为Andorid平台编译</a></p>
+<h2 id="1配置andorid-sdk环境">1.配置Andorid SDK环境</h2>
+<h3 id="下载sdk">下载SDK</h3>
+<p>到Androdid开发者官网：https://developer.android.google.cn/studio?hl=en</p>
+<p>下拉页面找到命令行工具包下载地址</p>
+<p>下载命令行工具 <a href="https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip?hl=zh-cn">commandlinetools</a>压缩包</p>
+<p>然后解压缩这个文件</p>
+<p>参照官方说明在解压的当前目录下运行</p>
+<h4 id="验证sdk许可">验证sdk许可</h4>
+<p>出现提示时，全部输入y，答应许可</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./bin/sdkmanager --sdk_root<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span> --licenses
+</code></pre></div><h4 id="安装skd工具">安装skd工具</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./bin/sdkmanager --sdk_root<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#e6db74">&#34;platform-tools&#34;</span> <span style="color:#e6db74">&#34;build-tools;30.0.3&#34;</span> <span style="color:#e6db74">&#34;platforms;android-29&#34;</span> <span style="color:#e6db74">&#34;cmdline-tools;latest&#34;</span> <span style="color:#e6db74">&#34;cmake;3.10.2.4988404&#34;</span>
+</code></pre></div><p>然后，保险起见请把当前目录的bin路径附加到系统的path</p>
+<p>完成~</p>
 <hr>
-<h3 id="想在世界上留下什么">想在世界上留下什么？</h3>
-<ul>
-<li>
-<p>留下一本关于这个世界的书。把我看见这个世界真实的样子写出来，特别是人类社会充斥各种谎言，也许需要匿名创作，否则社会不让你写真实的样子。我是谁并不重要，重要的是我做了什么，那决定了我是谁。这本书应该会做通过我博客里所思所想整理归纳。</p>
-</li>
-<li>
-<p>继续贡献开源项目。昨天用搜索引擎搜了下自己，无意间看到自己群里分享的代码被一些人引用，原来不知觉间足迹也扩散开去了，留下了些对他人有帮助的东西。其实人死了，留下的东西对自己有用也没啥意义，最终留下来的是对大家有用才是真的。</p>
-<p>很多人繁衍后代是希望让后代来继承、甚至强制背负自己的愿望。相比之下，如果我写一本书，开设些开源项目，我的思想和正在做的事可能会影响到无数人，相当于创造了一个个“我”，并且会有很多人来自愿继承、延续、发展自己所专注的事情，哪怕有一天我死了，可我喜欢和向往的事情却一直被人维护并存在着，在这一层面上并不亚于我一直活着。。。</p>
-<p>所以，我应该要发自内心看看自己喜欢和憧憬什么，然后为之创建开源项目让其一直留存下去~</p>
-</li>
-</ul>
-<hr>
-<h3 id="想体验和经历的事情">想体验和经历的事情</h3>
-<ul>
-<li>
-<p>养一只聪明的狗子陪我度过将来的日子。人类太复杂了，我不喜欢复杂的人际，不擅长、也不想做形式和表面功夫，我与人类社会真的格格不入。狗子是比较简单易懂，心情各方面写在尾巴上，而且忠诚始终如一，不用去猜忌太多。</p>
-</li>
-<li>
-<p>想再次见到UFO，希望掌握超越人类的科技。我是真的见过UFO，这个我后面单独开一篇文章写。通过UFO的经历，觉得这个世界很神奇，从来不限制可能性。人类现在的科技，在那种飞行器下显得非常稚嫩吧。人类现在很多不可能的东西，可能在高超的科技下都会成为可能，比如癌症其实可以治疗等。。。</p>
-</li>
-</ul>
+<p>或者通过Android Studio安装</p>
+<p>下载<a href="https://r3---sn-2x3elnel.gvt1.com/edgedl/android/studio/ide-zips/2021.2.1.16/android-studio-2021.2.1.16-linux.tar.gz">andorid-studio</a>压缩包解压，然后把android-studio的bin目录添加到系统路径，运行然后会提示安装</p>
+<p>Andorid studio安装的话，sdk和jre目录如下</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/home/用户/Android/Sdk
+android-studio/jre
+</code></pre></div><h2 id="2添加andorid-keystore调试密钥库">2.添加Andorid Keystore（调试密钥库）</h2>
+<p>来到你sdk的文件夹下，运行以下命令</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">keytool -genkey -alias android.keystore -keyalg RSA -validity <span style="color:#ae81ff">20000</span> -keystore android.keystore 
+</code></pre></div><h2 id="3设置godot编辑器">3.设置Godot编辑器</h2>
+<p>打开Gdodot的编辑器设置，导出-andorid菜单</p>
+<p>设置Andorid SDK路径：输入你刚才解压的sdk文件夹路径</p>
+<p>调试密钥库：输入你刚才第二步生成的android.keystore路径</p>
+<h2 id="4导出apk">4.导出APK</h2>
+<p>导出模板选择安卓，导出就行了</p>
 
                 </section>
             </article>
@@ -121,7 +133,7 @@
                 <hr></hr>
 <span class="share-fx">分享</span>
 <span>&nbsp</span>
-<a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2f1658324487%2f - %e7%8e%b0%e5%9c%a8%e9%9c%80%e8%a6%81%e5%81%9a%e4%bb%80%e4%b9%88%ef%bc%9f by @sci-fx"><span class="icon-twitter"> tweet</span></a>
+<a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fscifx.github.io%2fposts%2f1660618787%2f - Godot%e5%af%bc%e5%87%ba%e5%ae%89%e5%8d%93%e5%ba%94%e7%94%a8 by @sci-fx"><span class="icon-twitter"> tweet</span></a>
 <span>&nbsp</span>
 <a class="facebook" href="#" onclick="
     window.open(
@@ -131,7 +143,7 @@
     return false;"><span class="icon-facebook-rect"> Share</span>
 </a>
 <span>&nbsp</span>
-<a class="weibo" href="http://service.weibo.com/share/share.php?title=https%3a%2f%2fscifx.github.io%2fposts%2f1658324487%2f - %e7%8e%b0%e5%9c%a8%e9%9c%80%e8%a6%81%e5%81%9a%e4%bb%80%e4%b9%88%ef%bc%9f by @SciFX%e5%88%9b%e6%96%b0%e5%ae%9e%e9%aa%8c%e5%ae%a4&url=https%3a%2f%2fscifx.github.io%2fposts%2f1658324487%2f&pic=分享的图片">
+<a class="weibo" href="http://service.weibo.com/share/share.php?title=https%3a%2f%2fscifx.github.io%2fposts%2f1660618787%2f - Godot%e5%af%bc%e5%87%ba%e5%ae%89%e5%8d%93%e5%ba%94%e7%94%a8 by @SciFX%e5%88%9b%e6%96%b0%e5%ae%9e%e9%aa%8c%e5%ae%a4&url=https%3a%2f%2fscifx.github.io%2fposts%2f1660618787%2f&pic=分享的图片">
   <span class="icon-weibo"> 微博</span>
 </a>
 
@@ -146,10 +158,6 @@
 
     
     
-    
-        <li>
-            <a href="/posts/1660618787/">Godot导出安卓应用<aside class="dates">Aug 16 2022</aside></a>
-        </li>
     
         <li>
             <a href="/posts/1660356505/">创新是最佳生产力<aside class="dates">Aug 13 2022</aside></a>
@@ -169,6 +177,10 @@
     
         <li>
             <a href="/posts/1658405818/">Real-GUI<aside class="dates">Jul 21 2022</aside></a>
+        </li>
+    
+        <li>
+            <a href="/posts/1658324487/">现在需要做什么？<aside class="dates">Jul 20 2022</aside></a>
         </li>
     
         <li>

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 13 Aug 2022 10:08:25 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 16 Aug 2022 10:59:47 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Godot导出安卓应用</title>
+      <link>https://scifx.github.io/posts/1660618787/</link>
+      <pubDate>Tue, 16 Aug 2022 10:59:47 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/posts/1660618787/</guid>
+      <description>之前在windows导出过 但是windows下文件路径太散 不好组织 现在在linux环境下步骤比较明晰 *结合官方文档参考食用更佳：为Andor</description>
+    </item>
     
     <item>
       <title>创新是最佳生产力</title>
