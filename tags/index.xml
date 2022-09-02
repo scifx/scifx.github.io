@@ -6,10 +6,37 @@
     <description>Recent content in Tags on SciFX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 Aug 2022 15:26:04 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Sep 2022 14:44:07 +0800</lastBuildDate>
     
 	<atom:link href="https://scifx.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Arduino</title>
+      <link>https://scifx.github.io/tags/arduino/</link>
+      <pubDate>Fri, 02 Sep 2022 14:44:07 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Esp32</title>
+      <link>https://scifx.github.io/tags/esp32/</link>
+      <pubDate>Fri, 02 Sep 2022 14:44:07 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/tags/esp32/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>硬件</title>
+      <link>https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6/</link>
+      <pubDate>Fri, 02 Sep 2022 14:44:07 +0800</pubDate>
+      
+      <guid>https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>安卓</title>
@@ -314,15 +341,6 @@
       <pubDate>Sat, 13 Apr 2019 01:47:27 +0000</pubDate>
       
       <guid>https://scifx.github.io/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>硬件</title>
-      <link>https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6/</link>
-      <pubDate>Thu, 14 Feb 2019 23:05:33 +0800</pubDate>
-      
-      <guid>https://scifx.github.io/tags/%E7%A1%AC%E4%BB%B6/</guid>
       <description></description>
     </item>
     
