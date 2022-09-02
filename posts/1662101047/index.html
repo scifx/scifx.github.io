@@ -53,7 +53,7 @@
                     </h1>
                     <h2 class="headline">
                     Sep 2, 2022 14:44
-                    · 884 words
+                    · 909 words
                     · 2 minute read
                       <span class="tags">
                       
@@ -84,6 +84,7 @@
     </li>
     <li><a href="#arduino-ide配置">Arduino IDE配置</a></li>
     <li><a href="#关于查看板子端口">关于查看板子端口</a></li>
+    <li><a href="#关于hard-resetting-via-rts-pin">关于Hard resetting via RTS pin&hellip;</a></li>
   </ul>
 </nav>
                     </div>
@@ -177,13 +178,16 @@ https://github.com/igrr/mkspiffs/releases/download/0.2.3/mkspiffs-0.2.3-arduino-
 <h2 id="arduino-ide配置">Arduino IDE配置</h2>
 <p>我买了的板子是9.9元的eps32-c3的简约板</p>
 <p>据说没有ch340这个芯片</p>
-<p>需要设置烧录模式为IDO：</p>
-<p>打开Arduino IDE，菜单依次选择&quot;工具-Flash Mode-IDO&rdquo;</p>
+<p>需要设置烧录模式为DIO：</p>
+<p>打开Arduino IDE，菜单依次选择&quot;工具-Flash Mode-DIO&rdquo;</p>
 <hr>
 <h2 id="关于查看板子端口">关于查看板子端口</h2>
 <p>命令行运行两遍，多出那个就是你板子的</p>
 <pre><code>ls /dev/tty*
 </code></pre><p>其实，我用的linux下会自动识别出来，不用自己查</p>
+<hr>
+<h2 id="关于hard-resetting-via-rts-pin">关于Hard resetting via RTS pin&hellip;</h2>
+<p>那是程序上传成功了，并不是错误</p>
 
                 </section>
             </article>
