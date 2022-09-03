@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scifx.github.io/posts/</loc>
+    <lastmod>2022-09-03T16:08:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scifx.github.io/</loc>
+    <lastmod>2022-09-03T16:08:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scifx.github.io/tags/</loc>
+    <lastmod>2022-09-03T16:08:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scifx.github.io/tags/termux/</loc>
+    <lastmod>2022-09-03T16:08:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scifx.github.io/tags/%E6%89%8B%E6%9C%BA/</loc>
+    <lastmod>2022-09-03T16:08:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scifx.github.io/posts/1662192489/</loc>
+    <lastmod>2022-09-03T16:08:09+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://scifx.github.io/tags/arduino/</loc>
     <lastmod>2022-09-02T14:44:07+08:00</lastmod>
   </url>
@@ -14,21 +44,6 @@
   
   <url>
     <loc>https://scifx.github.io/posts/1662101047/</loc>
-    <lastmod>2022-09-02T14:44:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scifx.github.io/posts/</loc>
-    <lastmod>2022-09-02T14:44:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scifx.github.io/</loc>
-    <lastmod>2022-09-02T14:44:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scifx.github.io/tags/</loc>
     <lastmod>2022-09-02T14:44:07+08:00</lastmod>
   </url>
   
