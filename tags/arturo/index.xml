@@ -4,21 +4,16 @@
     <title>Arturo on SciFX</title>
     <link>https://scifx.github.io/tags/arturo/</link>
     <description>Recent content in Arturo on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 31 Jul 2022 22:44:59 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/arturo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/arturo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arturo语言的评测</title>
       <link>https://scifx.github.io/posts/1659278699/</link>
       <pubDate>Sun, 31 Jul 2022 22:44:59 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1659278699/</guid>
-      <description>我写了文件内容搜索的测试 尝试写了Nim、Python、Arturo、Autohotkey四种语言版本 测试数据： 代码量（行 Python（20+</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;我写了文件内容搜索的测试&lt;/p&gt;&#xA;&lt;p&gt;尝试写了Nim、Python、Arturo、Autohotkey四种语言版本&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;测试数据&#34;&gt;测试数据：&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;代码量（行&#xA;Python（20+）&amp;gt;Autohotkey（20+）&amp;gt;Nim（15+）&amp;gt;Arturo（8&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

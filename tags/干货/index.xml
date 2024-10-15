@@ -4,48 +4,37 @@
     <title>干货 on SciFX</title>
     <link>https://scifx.github.io/tags/%E5%B9%B2%E8%B4%A7/</link>
     <description>Recent content in 干货 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 29 Dec 2020 19:11:42 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/%E5%B9%B2%E8%B4%A7/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/%E5%B9%B2%E8%B4%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于如何赚钱</title>
       <link>https://scifx.github.io/posts/1609240302/</link>
       <pubDate>Tue, 29 Dec 2020 19:11:42 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1609240302/</guid>
-      <description>贫穷的根源 很简单，很多时候是受环境和人的影响，导致认知局限。 典型的，好好读书，考试、找一份稳定的工作、努力上班赚钱、存钱。。。买房 如果你的父</description>
+      <description>&lt;h2 id=&#34;贫穷的根源&#34;&gt;贫穷的根源&lt;/h2&gt;&#xA;&lt;p&gt;很简单，很多时候是受环境和人的影响，导致认知局限。&lt;/p&gt;&#xA;&lt;p&gt;典型的，好好读书，考试、找一份稳定的工作、努力上班赚钱、存钱。。。买房&lt;/p&gt;&#xA;&lt;p&gt;如果你的父母只是普通人的话，也只能把有限的认知传给你，并不能思考到更高的层面&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>B站的排名算法</title>
       <link>https://scifx.github.io/posts/b_rank/</link>
       <pubDate>Mon, 07 Oct 2019 19:50:42 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/b_rank/</guid>
-      <description>作为一名B站UP主当然想要让自己的视频占据搜索的首页位置。 那么利用好推荐算法的机制将会提升你视频的排名，提升曝光量~ 因为此前B站被泄露过网站</description>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;作为一名B站UP主当然想要让自己的视频占据搜索的首页位置。&lt;/p&gt;&#xA;&lt;p&gt;那么利用好推荐算法的机制将会提升你视频的排名，提升曝光量~&lt;/p&gt;&#xA;&lt;p&gt;因为此前B站被泄露过网站源码，并且在github仍能下载到。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>开源项目资源</title>
       <link>https://scifx.github.io/posts/opensource_proj/</link>
       <pubDate>Mon, 23 Sep 2019 16:19:32 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/opensource_proj/</guid>
-      <description>素材网站 影片： 宇宙之心（科学家采访素材） http://www.themindoftheuniverse.org/ 互联网档案馆 https://archive.org/ NASA官网 https://www.nasa.gov/ science360 https://science360.gov/files/</description>
+      <description>&lt;h1 id=&#34;素材网站&#34;&gt;素材网站&lt;/h1&gt;&#xA;&lt;p&gt;影片：&lt;/p&gt;&#xA;&lt;p&gt;宇宙之心（科学家采访素材） &lt;a href=&#34;http://www.themindoftheuniverse.org/&#34;&gt;http://www.themindoftheuniverse.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;互联网档案馆 &lt;a href=&#34;https://archive.org/&#34;&gt;https://archive.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;NASA官网 &lt;a href=&#34;https://www.nasa.gov/&#34;&gt;https://www.nasa.gov/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;science360 &lt;a href=&#34;https://science360.gov/files/&#34;&gt;https://science360.gov/files/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>如何免费观看VIP视频？</title>
       <link>https://scifx.github.io/posts/vip_video/</link>
       <pubDate>Mon, 05 Nov 2018 13:50:06 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/vip_video/</guid>
-      <description>原本喜欢的动漫在D站看得津津有味~ 看到一半居然被腾讯买断独播版权了！ WTF！！！ 可我并不想向万恶的资本主义低头，怎么办？&amp;rdquo; VIP</description>
+      <description>&lt;p&gt;原本喜欢的动漫在D站看得津津有味~&lt;/p&gt;&#xA;&lt;p&gt;看到一半居然被腾讯买断独播版权了！&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://scifx.github.io/images/mht.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;WTF！！！&lt;/p&gt;&#xA;&lt;p&gt;可我并不想向万恶的资本主义低头，怎么办？&amp;quot;&lt;/p&gt;&#xA;&lt;h3 id=&#34;vip视频解析&#34;&gt;VIP视频解析&lt;/h3&gt;&#xA;&lt;p&gt;很简单！！！&lt;/p&gt;&#xA;&lt;p&gt;在视频网址之前粘贴上解析地址！然后回车！&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,21 +4,16 @@
     <title>下载 on SciFX</title>
     <link>https://scifx.github.io/tags/%E4%B8%8B%E8%BD%BD/</link>
     <description>Recent content in 下载 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 18 Aug 2020 21:09:02 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/%E4%B8%8B%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/%E4%B8%8B%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>手动解析下载腾讯视频</title>
       <link>https://scifx.github.io/posts/1597756142/</link>
       <pubDate>Tue, 18 Aug 2020 21:09:02 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1597756142/</guid>
-      <description>妈咪想我帮她下载某微信公众号里大悲咒的音频。 视频解析 为此，我需要先获得原视频链接，我用电脑版登陆微信，右键选择用默认浏览器打开网页。 我用Ch</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;妈咪想我帮她下载某微信公众号里大悲咒的音频。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;视频解析&#34;&gt;视频解析&lt;/h2&gt;&#xA;&lt;p&gt;为此，我需要先获得原视频链接，我用电脑版登陆微信，右键选择用默认浏览器打开网页。  我用Chrome浏览器打开网页后，我右键页面，审查网页元素，来到Network选项，过滤器设置为media，侦听来自网页的音视频类型的文件。原视频是29分钟的，我发现视频被网站拆分为了几段视频传输。这意味着需要把所有视频下载下来，然后合并为一个视频。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

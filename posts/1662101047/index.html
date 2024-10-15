@@ -7,7 +7,7 @@
 		
 		<meta name="author" content="scifx">
 		<meta name="description" content="发现世界，记录见闻，分享知识">
-		<meta name="generator" content="Hugo 0.68.3" />
+		<meta name="generator" content="Hugo 0.135.0">
 		<title>Esp32-c3在linux环境下使用Arduino的配置方法 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
@@ -18,7 +18,7 @@
 		
 
 		
-		<link href="https://scifx.github.io/index.xml" rel="alternate" type="application/rss+xml" title="SciFX" />
+		<link href="#ZgotmplZ" rel="alternate" type="application/rss+xml" title="SciFX" />
 		
 
 		
@@ -100,7 +100,7 @@
 </blockquote>
 <h2 id="手动安装分析">手动安装分析</h2>
 <p>参考<a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html#linux">esp32官方手动安装文档</a></p>
-<pre><code>sudo usermod -a -G dialout $USER &amp;&amp; \
+<pre tabindex="0"><code>sudo usermod -a -G dialout $USER &amp;&amp; \
 sudo apt-get install git &amp;&amp; \
 wget https://bootstrap.pypa.io/get-pip.py &amp;&amp; \
 sudo python3 get-pip.py &amp;&amp; \
@@ -111,51 +111,51 @@ git clone https://github.com/espressif/arduino-esp32.git esp32 &amp;&amp; \
 cd esp32/tools &amp;&amp; \
 python3 get.py
 </code></pre><p>发现一眼命令蛮多还头晕？然而翻译一下，有用的信息其实是</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#先安装git(应该不会没有安装吧)</span>
-sudo apt-get install git
-
-<span style="color:#75715e">#用pip安装pyserial(python的串口模块)</span>
-sudo pip3 install pyserial
-
-<span style="color:#75715e">#创建arduino下的开发板模块文件夹</span>
-mkdir -p ~/Arduino/hardware/espressif
-
-<span style="color:#75715e">#进到文件夹里面</span>
-cd ~/Arduino/hardware/espressif
-
-<span style="color:#75715e">#通过git下载，这一步就出问题了。。。。？？？？？？？？？？？？？？？？？？？？</span>
-git clone https://github.com/espressif/arduino-esp32.git esp32
-
-<span style="color:#75715e">#进入到tools文件夹下</span>
-cd esp32/tools
-
-<span style="color:#75715e">#然后运行get.py下载依赖。。。这一步有大问题。。。？？？？？？？？？？？？？？？？</span>
-python3 get.py
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#先安装git(应该不会没有安装吧)</span>
+</span></span><span style="display:flex;"><span>sudo apt-get install git
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#用pip安装pyserial(python的串口模块)</span>
+</span></span><span style="display:flex;"><span>sudo pip3 install pyserial
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#创建arduino下的开发板模块文件夹</span>
+</span></span><span style="display:flex;"><span>mkdir -p ~/Arduino/hardware/espressif
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#进到文件夹里面</span>
+</span></span><span style="display:flex;"><span>cd ~/Arduino/hardware/espressif
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#通过git下载，这一步就出问题了。。。。？？？？？？？？？？？？？？？？？？？？</span>
+</span></span><span style="display:flex;"><span>git clone https://github.com/espressif/arduino-esp32.git esp32
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#进入到tools文件夹下</span>
+</span></span><span style="display:flex;"><span>cd esp32/tools
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#然后运行get.py下载依赖。。。这一步有大问题。。。？？？？？？？？？？？？？？？？</span>
+</span></span><span style="display:flex;"><span>python3 get.py
+</span></span></code></pre></div><hr>
 <h2 id="解决下载问题">解决下载问题</h2>
 <h3 id="下载主仓库">下载主仓库</h3>
 <p>先是这个</p>
-<pre><code>git clone https://github.com/espressif/arduino-esp32.git esp32
+<pre tabindex="0"><code>git clone https://github.com/espressif/arduino-esp32.git esp32
 </code></pre><p>直接手动去github下载仓库  <a href="https://github.com/espressif/arduino-esp32">https://github.com/espressif/arduino-esp32</a></p>
 <ol>
 <li>下载完后解压文件</li>
 <li>把文件夹重命名为<strong>esp32</strong></li>
 <li>并复制到下面这个文件夹里面</li>
 </ol>
-<pre><code>~/Arduino/hardware/espressif
+<pre tabindex="0"><code>~/Arduino/hardware/espressif
 </code></pre><p>当完成以上步骤，你下载好的文件夹路径应该是</p>
-<pre><code>~/Arduino/hardware/espressif/esp32/
+<pre tabindex="0"><code>~/Arduino/hardware/espressif/esp32/
 </code></pre><hr>
 <h3 id="下载tools">下载Tools</h3>
 <p>打开文件</p>
-<pre><code>esp32/package/package_esp32_index.template.json
+<pre tabindex="0"><code>esp32/package/package_esp32_index.template.json
 </code></pre><p>按 Ctrl+F 搜索下面文本</p>
-<pre><code>x86_64-pc-linux
+<pre tabindex="0"><code>x86_64-pc-linux
 </code></pre><p>备注：这个文件是json格式，里面host字段代表系统架构（如果你是其他系统，同理找出host对应的关键字，此处linux就是x86_64-pc-linux）</p>
 <p>我发现有7个高亮匹配结果</p>
 <p>host后面紧跟的</p>
 <p>url:“https://&hellip;&hellip;tar.gz&quot;就是我们需要下载的东西</p>
-<pre><code>https://github.com/espressif/crosstool-NG/releases/download/esp-2021r2-patch3/riscv32-esp-elf-gcc8_4_0-esp-2021r2-patch3-linux-amd64.tar.gz
+<pre tabindex="0"><code>https://github.com/espressif/crosstool-NG/releases/download/esp-2021r2-patch3/riscv32-esp-elf-gcc8_4_0-esp-2021r2-patch3-linux-amd64.tar.gz
 
 https://github.com/espressif/crosstool-NG/releases/download/esp-2021r2-patch3/xtensa-esp32-elf-gcc8_4_0-esp-2021r2-patch3-linux-amd64.tar.gz
 
@@ -172,18 +172,18 @@ https://github.com/igrr/mkspiffs/releases/download/0.2.3/mkspiffs-0.2.3-arduino-
 <p>或者FDM下载工具直接下载就好了。</p>
 <p>下载完成以后</p>
 <p>把它们全部解压到文件夹</p>
-<pre><code>esp32/tools/
+<pre tabindex="0"><code>esp32/tools/
 </code></pre><p>最后，重启Arduino IDE就配置好了最难搞的部分。</p>
 <hr>
 <h2 id="arduino-ide配置">Arduino IDE配置</h2>
 <p>我买了的板子是9.9元的eps32-c3的简约板</p>
 <p>据说没有ch340这个芯片</p>
 <p>需要设置烧录模式为DIO：</p>
-<p>打开Arduino IDE，菜单依次选择&quot;工具-Flash Mode-DIO&rdquo;</p>
+<p>打开Arduino IDE，菜单依次选择&quot;工具-Flash Mode-DIO&quot;</p>
 <hr>
 <h2 id="关于查看板子端口">关于查看板子端口</h2>
 <p>命令行运行两遍，多出那个就是你板子的</p>
-<pre><code>ls /dev/tty*
+<pre tabindex="0"><code>ls /dev/tty*
 </code></pre><p>其实，我用的linux下会自动识别出来，不用自己查</p>
 <hr>
 <h2 id="关于hard-resetting-via-rts-pin">关于Hard resetting via RTS pin&hellip;</h2>
@@ -223,43 +223,43 @@ https://github.com/igrr/mkspiffs/releases/download/0.2.3/mkspiffs-0.2.3-arduino-
     
     
         <li>
-            <a href="/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
+            <a href="https://scifx.github.io/posts/1729001041/">聊聊之后的计划<aside class="dates">Oct 15 2024</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1660634764/">手机端打包WebApp<aside class="dates">Aug 16 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1660631387/">Automa网页自动化神器<aside class="dates">Aug 16 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1660634764/">手机端打包WebApp<aside class="dates">Aug 16 2022</aside></a>
         </li>
     
 </ul>

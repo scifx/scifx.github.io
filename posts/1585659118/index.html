@@ -7,7 +7,7 @@
 		
 		<meta name="author" content="scifx">
 		<meta name="description" content="发现世界，记录见闻，分享知识">
-		<meta name="generator" content="Hugo 0.68.3" />
+		<meta name="generator" content="Hugo 0.135.0">
 		<title>AHK自动整理桌面脚本 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
@@ -18,7 +18,7 @@
 		
 
 		
-		<link href="https://scifx.github.io/index.xml" rel="alternate" type="application/rss+xml" title="SciFX" />
+		<link href="#ZgotmplZ" rel="alternate" type="application/rss+xml" title="SciFX" />
 		
 
 		
@@ -74,37 +74,37 @@
                   
                 
                 <section id="post-body">
-                    <pre><code class="language-autohotkey" data-lang="autohotkey">a:=[]
-;FileSelectFolder,folder
-folder:=&quot;C:\Users\Administrator\Desktop&quot;
-Loop,%folder%\*.*
-{
-temp:=folder . &quot;\files\&quot; . &quot;.&quot; . A_LoopFileExt
-if not a.HasKey(%A_LoopFileExt%)
-	FileCreateDir,%temp%
-	a.Push(%A_LoopFileExt%)
-FileMove,%A_LoopFileFullPath%,%temp%
-}
-/*
-创建数组a
-选择文件夹并把路径存储到folder
-循环文件夹里所有的文件（*.*作为通配符可以匹配所有文件）
-	设置临时变量temp为分类文件夹的完整路径
-	如果数组a里没有当前文件的扩展名
-		创建分类文件夹
-		并把扩展名添加到数组a中
-	把文件移动到分类文件夹中
-
-思路；
-创建数组a，用于存储文件夹下所有出现过的文件扩展名，一开始为空。
-然后循环文件夹下所有的文件，取得它们的扩展名，并判断是否已经创建了扩展名文件夹。
-判断依据是，a数组为空，创建文件夹后，下一步就会把那类的文件扩展名添加到数组a之中。
-如果数组a里没有该扩展名，说明没有创建该文件夹。
-做完以上步骤后，肯定都有了各种扩展名的文件夹，接下来就把它们移动到对应的文件夹里。
-
-by @SciFX
-/*
-</code></pre>
+                    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-autohotkey" data-lang="autohotkey"><span style="display:flex;"><span>a:<span style="color:#f92672">=</span>[]<span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">;FileSelectFolder,folder</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>folder:<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;C:\Users\Administrator\Desktop&#34;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>Loop,%folder%\<span style="color:#f92672">*.*</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>{<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>temp:<span style="color:#f92672">=</span>folder <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;\files\&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#f92672">.</span> A_LoopFileExt<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>if <span style="color:#f92672">not</span> a<span style="color:#f92672">.</span>HasKey(%A_LoopFileExt%)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>	FileCreateDir,%temp%<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>	a<span style="color:#f92672">.</span>Push(%A_LoopFileExt%)<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>FileMove,%A_LoopFileFullPath%,%temp%<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>}<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">创建数组a
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">选择文件夹并把路径存储到folder
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">循环文件夹里所有的文件（*.*作为通配符可以匹配所有文件）
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">	设置临时变量temp为分类文件夹的完整路径
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">	如果数组a里没有当前文件的扩展名
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">		创建分类文件夹
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">		并把扩展名添加到数组a中
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">	把文件移动到分类文件夹中
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">思路；
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">创建数组a，用于存储文件夹下所有出现过的文件扩展名，一开始为空。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">然后循环文件夹下所有的文件，取得它们的扩展名，并判断是否已经创建了扩展名文件夹。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">判断依据是，a数组为空，创建文件夹后，下一步就会把那类的文件扩展名添加到数组a之中。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">如果数组a里没有该扩展名，说明没有创建该文件夹。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">做完以上步骤后，肯定都有了各种扩展名的文件夹，接下来就把它们移动到对应的文件夹里。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">by @SciFX
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">/*
+</span></span></span></code></pre></div>
                 </section>
             </article>
 
@@ -139,43 +139,43 @@ by @SciFX
     
     
         <li>
-            <a href="/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
+            <a href="https://scifx.github.io/posts/1729001041/">聊聊之后的计划<aside class="dates">Oct 15 2024</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662101047/">Esp32-c3在linux环境下使用Arduino的配置方法<aside class="dates">Sep 2 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1660634764/">手机端打包WebApp<aside class="dates">Aug 16 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662101047/">Esp32-c3在linux环境下使用Arduino的配置方法<aside class="dates">Sep 2 2022</aside></a>
         </li>
     
 </ul>

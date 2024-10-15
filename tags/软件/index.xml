@@ -4,30 +4,23 @@
     <title>软件 on SciFX</title>
     <link>https://scifx.github.io/tags/%E8%BD%AF%E4%BB%B6/</link>
     <description>Recent content in 软件 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 21 Jul 2022 20:16:58 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Real-GUI</title>
       <link>https://scifx.github.io/posts/1658405818/</link>
       <pubDate>Thu, 21 Jul 2022 20:16:58 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1658405818/</guid>
-      <description>简单易用的图像分辨率放大软件(基于Real-ESRGAN) 概述 本项目基于可以将低清图像转化为高清图像的项目Real-ESRGAN 提供了对普通</description>
+      <description>&lt;h3 id=&#34;简单易用的图像分辨率放大软件基于real-esrganhttpsgithubcomxinntaoreal-esrgan&#34;&gt;简单易用的图像分辨率放大软件(基于&lt;a href=&#34;https://github.com/xinntao/Real-ESRGAN&#34;&gt;Real-ESRGAN&lt;/a&gt;)&lt;/h3&gt;&#xA;&lt;h5 id=&#34;概述&#34;&gt;概述&lt;/h5&gt;&#xA;&lt;p&gt;本项目基于可以将低清图像转化为高清图像的项目&lt;a href=&#34;https://github.com/xinntao/Real-ESRGAN&#34;&gt;Real-ESRGAN&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;提供了对普通用户简单易用的界面&lt;/p&gt;&#xA;&lt;h5 id=&#34;软件效果预览&#34;&gt;软件效果预览&lt;/h5&gt;&#xA;&lt;p&gt;(取自源项目&lt;a href=&#34;https://github.com/xinntao/Real-ESRGAN&#34;&gt;Real-ESRGAN&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/xinntao/Real-ESRGAN/raw/master/assets/teaser.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;h5 id=&#34;特色&#34;&gt;特色&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;一键拖拽式操作&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;支持批量图片及文件夹（单文件,多文件,多文件夹，嵌套的多文件夹）&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>一个超级便捷强大的桌面工具的设想</title>
       <link>https://scifx.github.io/posts/1597756816/</link>
       <pubDate>Tue, 18 Aug 2020 21:20:16 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1597756816/</guid>
-      <description>受blender的组合式快捷键和命令行的管道启发，我想尝试做一个很方便的程序。 构想 一个按键就是一块积木，只要组合一系列按键就可以无需编程实现</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;受blender的组合式快捷键和命令行的管道启发，我想尝试做一个很方便的程序。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;构想&#34;&gt;构想&lt;/h2&gt;&#xA;&lt;p&gt;一个按键就是一块积木，只要组合一系列按键就可以无需编程实现灵活复杂的流程操作。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -7,7 +7,7 @@
 		
 		<meta name="author" content="scifx">
 		<meta name="description" content="发现世界，记录见闻，分享知识">
-		<meta name="generator" content="Hugo 0.68.3" />
+		<meta name="generator" content="Hugo 0.135.0">
 		<title>Shell嵌入Python代码 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
@@ -18,7 +18,7 @@
 		
 
 		
-		<link href="https://scifx.github.io/index.xml" rel="alternate" type="application/rss+xml" title="SciFX" />
+		<link href="#ZgotmplZ" rel="alternate" type="application/rss+xml" title="SciFX" />
 		
 
 		
@@ -53,7 +53,7 @@
                     </h1>
                     <h2 class="headline">
                     Oct 10, 2019 10:42
-                    · 450 words
+                    · 444 words
                     · 1 minute read
                       <span class="tags">
                       
@@ -81,51 +81,51 @@
                     <blockquote>
 <p>python命令行执行代码</p>
 </blockquote>
-<pre><code>#执行文件
-python &quot;文件名称&quot;
+<pre tabindex="0"><code>#执行文件
+python &#34;文件名称&#34;
 
 #执行模块，如果有__main__函数
-python -m &quot;模块名称&quot;
+python -m &#34;模块名称&#34;
 
 #直接执行代码
-python -c &quot;代码&quot;
+python -c &#34;代码&#34;
 </code></pre><p>我们这里来看下直接执行代码，这样可以把代码直接写到shell脚本里</p>
 <h1 id="执行多行命令">执行多行命令</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#这一段是python代码块</span>
-
-script<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;
-</span><span style="color:#e6db74">for i in range(100):
-</span><span style="color:#e6db74">    print(i)
-</span><span style="color:#e6db74">&#34;</span>
-
-<span style="color:#75715e">#下面这段shell调用python执行命令</span>
-
-python -c <span style="color:#e6db74">&#34;&#34;&#34;</span>$script<span style="color:#e6db74">&#34;&#34;&#34;</span>
-
-<span style="color:#75715e">#输出效果</span>
-<span style="color:#ae81ff">0</span>
-<span style="color:#ae81ff">1</span>
-...
-<span style="color:#ae81ff">99</span>
-</code></pre></div><p>此处用三个引号是因为script定义好后，字符串前后的&quot;号被去掉了。所以要帮python命令补充前后单个引号,实际效果是“script”。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#这一段是python代码块</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>script<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">for i in range(100):
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    print(i)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#下面这段shell调用python执行命令</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>python -c <span style="color:#e6db74">&#34;&#34;&#34;</span>$script<span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#输出效果</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">99</span>
+</span></span></code></pre></div><p>此处用三个引号是因为script定义好后，字符串前后的&quot;号被去掉了。所以要帮python命令补充前后单个引号,实际效果是“script”。</p>
 <h1 id="带参数的命令">带参数的命令</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#这一段是python代码</span>
-script<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;
-</span><span style="color:#e6db74">import sys
-</span><span style="color:#e6db74">a=sys.argv
-</span><span style="color:#e6db74">for i in a:
-</span><span style="color:#e6db74">    print(i)
-</span><span style="color:#e6db74">&#34;</span>
-
-<span style="color:#75715e">#这一段shell调用python执行命令</span>
-python -c <span style="color:#e6db74">&#34;&#34;&#34;</span>$script<span style="color:#e6db74">&#34;&#34;&#34;</span> hello world
-
-<span style="color:#75715e">#输出效果</span>
--c
-hello
-world
-</code></pre></div><p>sys.argv是传入的参数数组，所以sys.argv[1]就是hello</p>
-<pre><code>#备忘后续研究
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#这一段是python代码</span>
+</span></span><span style="display:flex;"><span>script<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">import sys
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">a=sys.argv
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">for i in a:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    print(i)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#这一段shell调用python执行命令</span>
+</span></span><span style="display:flex;"><span>python -c <span style="color:#e6db74">&#34;&#34;&#34;</span>$script<span style="color:#e6db74">&#34;&#34;&#34;</span> hello world
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#输出效果</span>
+</span></span><span style="display:flex;"><span>-c
+</span></span><span style="display:flex;"><span>hello
+</span></span><span style="display:flex;"><span>world
+</span></span></code></pre></div><p>sys.argv是传入的参数数组，所以sys.argv[1]就是hello</p>
+<pre tabindex="0"><code>#备忘后续研究
 sys.stdin.readlines():
 </code></pre><h1 id="胶水语言">胶水语言</h1>
 <p>由上可以看到，python可以很方便作为命令行的中间处理器。</p>
@@ -166,43 +166,43 @@ sys.stdin.readlines():
     
     
         <li>
-            <a href="/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
+            <a href="https://scifx.github.io/posts/1729001041/">聊聊之后的计划<aside class="dates">Oct 15 2024</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662101047/">Esp32-c3在linux环境下使用Arduino的配置方法<aside class="dates">Sep 2 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1660634764/">手机端打包WebApp<aside class="dates">Aug 16 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662101047/">Esp32-c3在linux环境下使用Arduino的配置方法<aside class="dates">Sep 2 2022</aside></a>
         </li>
     
 </ul>

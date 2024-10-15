@@ -4,30 +4,23 @@
     <title>Nim语言 on SciFX</title>
     <link>https://scifx.github.io/tags/nim%E8%AF%AD%E8%A8%80/</link>
     <description>Recent content in Nim语言 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 08 Oct 2019 14:05:37 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/nim%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/nim%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nim语言笔记</title>
       <link>https://scifx.github.io/posts/1570514736/</link>
       <pubDate>Tue, 08 Oct 2019 14:05:37 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1570514736/</guid>
-      <description>let a=10; #创建常量(初始化后部不可变) const a=1; #创建常量(编译期计算定值) var a=10 #创建变量 let a:int=10 #创建变量设置类型 int float string var name=readLine(stdin) #用户输入 var foo=[1，2</description>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;let a=10;&#xA;#创建常量(初始化后部不可变)&#xA;&#xA;const a=1;&#xA;#创建常量(编译期计算定值)&#xA;&#xA;var a=10&#xA;#创建变量&#xA;&#xA;let a:int=10&#xA;#创建变量设置类型 int float string&#xA;&#xA;var name=readLine(stdin)&#xA;#用户输入&#xA;&#xA;var foo=[1，2，3，4，5]&#xA;foo[0]=2&#xA;echo foo[0..2]&#xA;#数组&#xA;&#xA;var foo={1，2，3，4，5}&#xA;#序列&#xA;&#xA;nil&#xA;#空类型是nil&#xA;&#xA;$xx&#xA;#转为字符串用$号&#xA;&#xA;discard&#xA;#忽略，类似pass&#xA;&#xA;type&#xA;    xx&#xA;#定义新数据类型&#xA;&#xA;type&#xA;    xx = enum&#xA;        x,x,x,x&#xA;var y=x&#xA;#枚举类型(只允许特定值)&#xA;&#xA;type&#xA;    x=range[0..5]&#xA;#范围类型&#xA;&#xA;type&#xA;    x= set[char]&#xA;#集合类型&#xA;&#xA;type&#xA;    x=array[0..5,int]&#xA;&#xA;low(x),high(x)&#xA;#数组&#xA;&#xA;var x:seq[int]&#xA;y=@[1,2,3,4,5,6]&#xA;#序列&#xA;&#xA;var x:array[3,string]&#xA;#开放数组&#xA;&#xA;var x:seq[string]&#xA;#开放序列&#xA;&#xA;x[1..10]&#xA;x[10..^1]&#xA;#切片操作&#xA;&#xA;type&#xA;    xx=object&#xA;        x:类型&#xA;var y=xx(x:xxx)&#xA;#对象&#xA;&#xA;type&#xA;    xx=tuple&#xA;        x:类型&#xA;        xx：类型&#xA;y=tuple[x:xxx,xx:xxx]&#xA;#元组&#xA;&#xA;type&#xA;    Node = ref object&#xA;      le, ri: Node&#xA;      data: int&#xA;  var&#xA;    n: Node&#xA;  new(n)&#xA;  n.data = 9 &#xA;#指针&#xA;&#xA;proc xx(x:int)=xxx&#xA;&#xA;proc yy(zz:proc (x:int))=&#xA;    xxx&#xA;    zz(xx)&#xA;#程序类型&#xA;&#xA;if xx：&#xA;&#xA;elif xx:&#xA;&#xA;else:&#xA;    xx&#xA;#判断&#xA;&#xA;&#xA;case xx：&#xA;&#xA;of xx：&#xA;&#xA;of xx：&#xA;&#xA;else：&#xA;    xx&#xA;##case语句&#xA;&#xA;while xx:&#xA;    xx&#xA;#while循环&#xA;&#xA;for i in 1..100:&#xA;    echo i&#xA;&#xA;for i in 1..&amp;lt;100:&#xA;    echo i&#xA;&#xA;for i,j in xx:&#xA;    echo xx&#xA;#for循环&#xA;&#xA;block xx:&#xA;    xx&#xA;#块语句&#xA;break xx&#xA;#跳出块&#xA;&#xA;&#xA;when xx:&#xA;&#xA;elif xx:&#xA;&#xA;else:&#xA;    xx&#xA;#和if差不多，但在编译期间计算&#xA;&#xA;proc xx(变量:类型):返回类型 =&#xA;    xxx&#xA;    result = xx&#xA;    (return xx)&#xA;#函数&#xA;&#xA;proc xx(变量:var 类型):返回类型 =&#xA;    xxx&#xA;#传入可变函数参数&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
-    
     <item>
       <title>关于Nim语言</title>
       <link>https://scifx.github.io/posts/nim/</link>
       <pubDate>Mon, 07 Oct 2019 13:11:03 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/nim/</guid>
-      <description>简约，美观，实用 人们应该花更多时间在解决问题上， 而不是纠结人为的规则。 应以最小的代价，换取最高的效率，解决问题才是首要。 在了解过很多门编程语</description>
+      <description>&lt;h1 id=&#34;简约美观实用&#34;&gt;简约，美观，实用&lt;/h1&gt;&#xA;&lt;p&gt;人们应该花更多时间在解决问题上，&lt;/p&gt;&#xA;&lt;p&gt;而不是纠结人为的规则。&lt;/p&gt;&#xA;&lt;p&gt;应以最小的代价，换取最高的效率，解决问题才是首要。&lt;/p&gt;&#xA;&lt;p&gt;在了解过很多门编程语言后，感觉Python最合我意。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

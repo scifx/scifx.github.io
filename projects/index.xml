@@ -4,12 +4,9 @@
     <title>Projects on SciFX</title>
     <link>https://scifx.github.io/projects/</link>
     <description>Recent content in Projects on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 03 Nov 2018 22:40:53 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://scifx.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

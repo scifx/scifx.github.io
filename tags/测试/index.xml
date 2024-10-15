@@ -4,21 +4,16 @@
     <title>测试 on SciFX</title>
     <link>https://scifx.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
     <description>Recent content in 测试 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 04 Nov 2018 14:07:32 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网站测试</title>
       <link>https://scifx.github.io/posts/test/</link>
       <pubDate>Sun, 04 Nov 2018 14:07:32 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/test/</guid>
-      <description>这是一个测试 ​ 代码 $ cd public $ git init $ git remote add origin https://github.com/coderzh/coderzh.github.io.git $ git add -A $ git commit -m &amp;#34;first commit&amp;#34; $ git push -u origin master 链接 ​ 文字链接 github ​ https://www.github.com 表格 1 0 1 1 0 1 1 0 1 图片 音乐播放器 视频</description>
+      <description>&lt;h2 id=&#34;这是一个测试&#34;&gt;这是一个测试&lt;/h2&gt;&#xA;&lt;p&gt;​&lt;/p&gt;&#xA;&lt;h5 id=&#34;代码&#34;&gt;代码&lt;/h5&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cd public&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ git init&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ git remote add origin https://github.com/coderzh/coderzh.github.io.git&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ git add -A&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ git push -u origin master&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;&#xA;&lt;h5 id=&#34;链接&#34;&gt;链接&lt;/h5&gt;&#xA;&lt;p&gt;​&#x9;文字链接 &lt;a href=&#34;https://www.github.com&#34;&gt;github&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;​&#x9;https://www.github.com&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h5 id=&#34;表格&#34;&gt;表格&lt;/h5&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;1&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;0&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;1&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;0&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;1&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h5 id=&#34;图片&#34;&gt;图片&lt;/h5&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://scifx.github.io/images/test.gif&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h5 id=&#34;音乐播放器&#34;&gt;音乐播放器&lt;/h5&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;hr&gt;&#xA;&lt;h5 id=&#34;视频&#34;&gt;视频&lt;/h5&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
-    
   </channel>
 </rss>

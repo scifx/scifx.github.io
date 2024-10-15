@@ -7,7 +7,7 @@
 		
 		<meta name="author" content="scifx">
 		<meta name="description" content="发现世界，记录见闻，分享知识">
-		<meta name="generator" content="Hugo 0.68.3" />
+		<meta name="generator" content="Hugo 0.135.0">
 		<title>Godot导出安卓应用 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
@@ -18,7 +18,7 @@
 		
 
 		
-		<link href="https://scifx.github.io/index.xml" rel="alternate" type="application/rss+xml" title="SciFX" />
+		<link href="#ZgotmplZ" rel="alternate" type="application/rss+xml" title="SciFX" />
 		
 
 		
@@ -105,21 +105,21 @@
 <p>参照官方说明在解压的当前目录下运行</p>
 <h4 id="验证sdk许可">验证sdk许可</h4>
 <p>出现提示时，全部输入y，答应许可</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./bin/sdkmanager --sdk_root<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span> --licenses
-</code></pre></div><h4 id="安装skd工具">安装skd工具</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./bin/sdkmanager --sdk_root<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#e6db74">&#34;platform-tools&#34;</span> <span style="color:#e6db74">&#34;build-tools;30.0.3&#34;</span> <span style="color:#e6db74">&#34;platforms;android-29&#34;</span> <span style="color:#e6db74">&#34;cmdline-tools;latest&#34;</span> <span style="color:#e6db74">&#34;cmake;3.10.2.4988404&#34;</span>
-</code></pre></div><p>然后，保险起见请把当前目录的bin路径附加到系统的path</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./bin/sdkmanager --sdk_root<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span> --licenses
+</span></span></code></pre></div><h4 id="安装skd工具">安装skd工具</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./bin/sdkmanager --sdk_root<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span> <span style="color:#e6db74">&#34;platform-tools&#34;</span> <span style="color:#e6db74">&#34;build-tools;30.0.3&#34;</span> <span style="color:#e6db74">&#34;platforms;android-29&#34;</span> <span style="color:#e6db74">&#34;cmdline-tools;latest&#34;</span> <span style="color:#e6db74">&#34;cmake;3.10.2.4988404&#34;</span>
+</span></span></code></pre></div><p>然后，保险起见请把当前目录的bin路径附加到系统的path</p>
 <p>完成~</p>
 <hr>
 <p>或者通过Android Studio安装</p>
 <p>下载<a href="https://r3---sn-2x3elnel.gvt1.com/edgedl/android/studio/ide-zips/2021.2.1.16/android-studio-2021.2.1.16-linux.tar.gz">andorid-studio</a>压缩包解压，然后把android-studio的bin目录添加到系统路径，运行然后会提示安装</p>
 <p>Andorid studio安装的话，sdk和jre目录如下</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/home/用户/Android/Sdk
-android-studio/jre
-</code></pre></div><h2 id="2添加andorid-keystore调试密钥库">2.添加Andorid Keystore（调试密钥库）</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/home/用户/Android/Sdk
+</span></span><span style="display:flex;"><span>android-studio/jre
+</span></span></code></pre></div><h2 id="2添加andorid-keystore调试密钥库">2.添加Andorid Keystore（调试密钥库）</h2>
 <p>来到你sdk的文件夹下，运行以下命令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">keytool -genkey -alias android.keystore -keyalg RSA -validity <span style="color:#ae81ff">20000</span> -keystore android.keystore 
-</code></pre></div><h2 id="3设置godot编辑器">3.设置Godot编辑器</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>keytool -genkey -alias android.keystore -keyalg RSA -validity <span style="color:#ae81ff">20000</span> -keystore android.keystore 
+</span></span></code></pre></div><h2 id="3设置godot编辑器">3.设置Godot编辑器</h2>
 <p>打开Gdodot的编辑器设置，导出-andorid菜单</p>
 <p>设置Andorid SDK路径：输入你刚才解压的sdk文件夹路径</p>
 <p>调试密钥库：输入你刚才第二步生成的android.keystore路径</p>
@@ -160,43 +160,43 @@ android-studio/jre
     
     
         <li>
-            <a href="/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
+            <a href="https://scifx.github.io/posts/1729001041/">聊聊之后的计划<aside class="dates">Oct 15 2024</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662101047/">Esp32-c3在linux环境下使用Arduino的配置方法<aside class="dates">Sep 2 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1660634764/">手机端打包WebApp<aside class="dates">Aug 16 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662101047/">Esp32-c3在linux环境下使用Arduino的配置方法<aside class="dates">Sep 2 2022</aside></a>
         </li>
     
 </ul>

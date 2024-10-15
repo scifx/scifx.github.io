@@ -4,21 +4,16 @@
     <title>安卓 on SciFX</title>
     <link>https://scifx.github.io/tags/%E5%AE%89%E5%8D%93/</link>
     <description>Recent content in 安卓 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 16 Aug 2022 15:26:04 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/%E5%AE%89%E5%8D%93/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/%E5%AE%89%E5%8D%93/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>手机端打包WebApp</title>
       <link>https://scifx.github.io/posts/1660634764/</link>
       <pubDate>Tue, 16 Aug 2022 15:26:04 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1660634764/</guid>
-      <description>要点 统一把html里要引用的文件路径改为 src=file:///android_asset/文件名 Sketchware 把文件拖入Asset文件夹 DroidScript 要在head</description>
+      <description>&lt;h2 id=&#34;要点&#34;&gt;要点&lt;/h2&gt;&#xA;&lt;p&gt;统一把html里要引用的文件路径改为&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;src=file:///android_asset/文件名&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Sketchware&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;把文件拖入Asset文件夹&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;DroidScript&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;要在head里加入app.js&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;file:///android_asset/app.js&amp;#34;&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;要在body里加入onload方法加载app.js&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

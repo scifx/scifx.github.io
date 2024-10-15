@@ -4,21 +4,16 @@
     <title>B站 on SciFX</title>
     <link>https://scifx.github.io/tags/b%E7%AB%99/</link>
     <description>Recent content in B站 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 07 Oct 2019 19:50:42 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/b%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/b%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>B站的排名算法</title>
       <link>https://scifx.github.io/posts/b_rank/</link>
       <pubDate>Mon, 07 Oct 2019 19:50:42 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/b_rank/</guid>
-      <description>作为一名B站UP主当然想要让自己的视频占据搜索的首页位置。 那么利用好推荐算法的机制将会提升你视频的排名，提升曝光量~ 因为此前B站被泄露过网站</description>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;作为一名B站UP主当然想要让自己的视频占据搜索的首页位置。&lt;/p&gt;&#xA;&lt;p&gt;那么利用好推荐算法的机制将会提升你视频的排名，提升曝光量~&lt;/p&gt;&#xA;&lt;p&gt;因为此前B站被泄露过网站源码，并且在github仍能下载到。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

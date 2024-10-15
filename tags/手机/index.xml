@@ -4,21 +4,16 @@
     <title>手机 on SciFX</title>
     <link>https://scifx.github.io/tags/%E6%89%8B%E6%9C%BA/</link>
     <description>Recent content in 手机 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 03 Sep 2022 16:08:09 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/%E6%89%8B%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/%E6%89%8B%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>电脑ssh连接termux</title>
       <link>https://scifx.github.io/posts/1662192489/</link>
       <pubDate>Sat, 03 Sep 2022 16:08:09 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1662192489/</guid>
-      <description>电脑安装open ssh apt install openssh 设置密码 passwd 生成keygen ssh-keygen -t rsa 把*.pub公钥复制到手机的.ssh目录下 cat ./*.pub &amp;gt;&amp;gt; authorized_keys 手机运行得到用户名 whoami 电脑连接 ssh 用户</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;电脑安装open ssh&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;apt install openssh&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;设置密码&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;passwd&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;生成keygen&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh-keygen -t rsa&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;把*.pub公钥复制到手机的.ssh目录下&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat ./*.pub &amp;gt;&amp;gt; authorized_keys&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;手机运行得到用户名&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;whoami&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;电脑连接&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh 用户名@192.168.123.81 -p &lt;span style=&#34;color:#ae81ff&#34;&gt;8022&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
   </channel>
 </rss>

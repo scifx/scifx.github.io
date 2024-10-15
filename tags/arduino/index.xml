@@ -4,21 +4,16 @@
     <title>Arduino on SciFX</title>
     <link>https://scifx.github.io/tags/arduino/</link>
     <description>Recent content in Arduino on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 02 Sep 2022 14:44:07 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Esp32-c3在linux环境下使用Arduino的配置方法</title>
       <link>https://scifx.github.io/posts/1662101047/</link>
       <pubDate>Fri, 02 Sep 2022 14:44:07 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1662101047/</guid>
-      <description>首先下载Arduino IDE 然后，打开Arduino IDE，在&amp;quot;工具-开发板管理器&amp;quot;里面搜索esp32下载最新版本，点击安装</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;首先下载&lt;a href=&#34;https://www.arduino.cc/en/software&#34;&gt;Arduino IDE&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;然后，打开Arduino IDE，在&amp;quot;工具-开发板管理器&amp;quot;里面搜索esp32下载最新版本，点击安装&lt;/p&gt;&#xA;&lt;p&gt;在国内，这一步就出问题了。。。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,21 +4,16 @@
     <title>随笔 on SciFX</title>
     <link>https://scifx.github.io/categories/%E9%9A%8F%E7%AC%94/</link>
     <description>Recent content in 随笔 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 23 Jun 2019 17:17:45 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/categories/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我回来啦!</title>
       <link>https://scifx.github.io/posts/2019623/</link>
       <pubDate>Sun, 23 Jun 2019 17:17:45 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/2019623/</guid>
-      <description>前段时间专研事情,现在回更! 测试下javascript</description>
+      <description>&lt;p&gt;前段时间专研事情,现在回更!&lt;/p&gt;&#xA;&lt;p&gt;测试下javascript&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
-    
   </channel>
 </rss>

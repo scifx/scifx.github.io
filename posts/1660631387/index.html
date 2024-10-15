@@ -7,7 +7,7 @@
 		
 		<meta name="author" content="scifx">
 		<meta name="description" content="发现世界，记录见闻，分享知识">
-		<meta name="generator" content="Hugo 0.68.3" />
+		<meta name="generator" content="Hugo 0.135.0">
 		<title>Automa网页自动化神器 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
@@ -18,7 +18,7 @@
 		
 
 		
-		<link href="https://scifx.github.io/index.xml" rel="alternate" type="application/rss+xml" title="SciFX" />
+		<link href="#ZgotmplZ" rel="alternate" type="application/rss+xml" title="SciFX" />
 		
 
 		
@@ -53,7 +53,7 @@
                     </h1>
                     <h2 class="headline">
                     Aug 16, 2022 14:29
-                    · 847 words
+                    · 844 words
                     · 2 minute read
                       <span class="tags">
                       
@@ -109,12 +109,12 @@
 <li>
 <p><strong>在Storage数据库</strong></p>
 <p>不需要加$$</p>
-<pre><code>data
+<pre tabindex="0"><code>data
 </code></pre></li>
 <li>
 <p><strong>在节点流内创建</strong></p>
 <p>需要加$$</p>
-<pre><code>$$data
+<pre tabindex="0"><code>$$data
 </code></pre></li>
 </ul>
 <p>所以，两种创建方式不同，无论你加不加$$，你查看元数据会发现全局变量前都有$$</p>
@@ -126,36 +126,36 @@
 <ul>
 <li>
 <p><strong>Storage的全局变量</strong></p>
-<pre><code>{{variables@变量名}}
+<pre tabindex="0"><code>{{variables@变量名}}
 </code></pre><p>用作类似编程里面那种常规变量的赋值和访问，比如写while循环只能用这个。</p>
 </li>
 <li>
 <p><strong>表格</strong></p>
-<pre><code>{{table@变量名}}
+<pre tabindex="0"><code>{{table@变量名}}
 </code></pre><p>这个是最好用的，就类似数据库一样。要用它保存数据，首先在storage创建表格，然后在工作流上面表格上选择连接工作表</p>
 </li>
 <li>
 <p><strong>局部的global。。。笑死</strong></p>
-<pre><code>{{globalData@变量名}}
+<pre tabindex="0"><code>{{globalData@变量名}}
 </code></pre><p>这个作用是传参，比如用执行工作流节点，引用一个工程，里面有一些变量，你在当前工程设置同样的global变量可以覆盖掉执行工作流节点的变量，起到了传参的作用。</p>
 <p>我想吐嘈这个并不像传统编程里的global变量，更像是传入的参数，甚至连当前工作流都不知道如何访问个体元素</p>
 </li>
 </ul>
 <p><strong>访问变量里的键值</strong></p>
 <p>比如storage里有变量</p>
-<pre><code>data:{child:&quot;你好&quot;}
+<pre tabindex="0"><code>data:{child:&#34;你好&#34;}
 </code></pre><p>你需要类似这样访问</p>
-<pre><code>{{variables@data}}.child
-</code></pre><p>就是要加&rdquo;.&ldquo;来访问，并且这个点要在{{}}的外面而不是里面。。。</p>
+<pre tabindex="0"><code>{{variables@data}}.child
+</code></pre><p>就是要加&quot;.&ldquo;来访问，并且这个点要在{{}}的外面而不是里面。。。</p>
 <p>奇了怪了</p>
 <h2 id="javascript调用">Javascript调用</h2>
 <h3 id="访问变量-1">访问变量</h3>
 <p>比如我要访问前面的data吧</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//返回值是object，可以类json这样访问吧
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">automaRefData</span>(<span style="color:#e6db74">&#34;varables&#34;</span>,<span style="color:#e6db74">&#34;child&#34;</span>)
-</code></pre></div><h3 id="设置变量">设置变量</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">automaSetVariable</span>(<span style="color:#e6db74">&#34;child&#34;</span>,<span style="color:#e6db74">&#34;有毒&#34;</span>)
-</code></pre></div><p>仅限设置storage的变量，就是带$$的那些，这次就不用写variables了，直接把变量名和要设置的值写上</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">//返回值是object，可以类json这样访问吧
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">automaRefData</span>(<span style="color:#e6db74">&#34;varables&#34;</span>,<span style="color:#e6db74">&#34;child&#34;</span>)
+</span></span></code></pre></div><h3 id="设置变量">设置变量</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">automaSetVariable</span>(<span style="color:#e6db74">&#34;child&#34;</span>,<span style="color:#e6db74">&#34;有毒&#34;</span>)
+</span></span></code></pre></div><p>仅限设置storage的变量，就是带$$的那些，这次就不用写variables了，直接把变量名和要设置的值写上</p>
 
                 </section>
             </article>
@@ -191,43 +191,43 @@
     
     
         <li>
-            <a href="/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
+            <a href="https://scifx.github.io/posts/1729001041/">聊聊之后的计划<aside class="dates">Oct 15 2024</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662101047/">Esp32-c3在linux环境下使用Arduino的配置方法<aside class="dates">Sep 2 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1660634764/">手机端打包WebApp<aside class="dates">Aug 16 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662101047/">Esp32-c3在linux环境下使用Arduino的配置方法<aside class="dates">Sep 2 2022</aside></a>
         </li>
     
 </ul>

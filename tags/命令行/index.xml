@@ -4,21 +4,16 @@
     <title>命令行 on SciFX</title>
     <link>https://scifx.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
     <description>Recent content in 命令行 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 11 Oct 2019 12:13:24 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>电脑自动工作</title>
       <link>https://scifx.github.io/posts/1570767203/</link>
       <pubDate>Fri, 11 Oct 2019 12:13:24 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1570767203/</guid>
-      <description>win计划任务 schtasks 报错：无法加载列资源 原因：编码显示问题，默认936中文GBK编码 解决办法：chcp命令设置编码，输入chcp 437(美国编码</description>
+      <description>&lt;h1 id=&#34;win计划任务&#34;&gt;win计划任务&lt;/h1&gt;&#xA;&lt;h2 id=&#34;schtasks&#34;&gt;schtasks&lt;/h2&gt;&#xA;&lt;p&gt;报错：无法加载列资源&lt;/p&gt;&#xA;&lt;p&gt;原因：编码显示问题，默认936中文GBK编码&lt;/p&gt;&#xA;&lt;p&gt;解决办法：chcp命令设置编码，输入chcp 437(美国编码)&lt;/p&gt;&#xA;&lt;h1 id=&#34;linux定时任务&#34;&gt;Linux定时任务&lt;/h1&gt;&#xA;&lt;p&gt;crontab&lt;/p&gt;&#xA;&lt;p&gt;at&lt;/p&gt;&#xA;&lt;h1 id=&#34;python&#34;&gt;Python&lt;/h1&gt;</description>
     </item>
-    
   </channel>
 </rss>

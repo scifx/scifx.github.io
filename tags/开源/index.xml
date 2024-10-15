@@ -4,30 +4,23 @@
     <title>开源 on SciFX</title>
     <link>https://scifx.github.io/tags/%E5%BC%80%E6%BA%90/</link>
     <description>Recent content in 开源 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 21 Jul 2022 20:16:58 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/%E5%BC%80%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/%E5%BC%80%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Real-GUI</title>
       <link>https://scifx.github.io/posts/1658405818/</link>
       <pubDate>Thu, 21 Jul 2022 20:16:58 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1658405818/</guid>
-      <description>简单易用的图像分辨率放大软件(基于Real-ESRGAN) 概述 本项目基于可以将低清图像转化为高清图像的项目Real-ESRGAN 提供了对普通</description>
+      <description>&lt;h3 id=&#34;简单易用的图像分辨率放大软件基于real-esrganhttpsgithubcomxinntaoreal-esrgan&#34;&gt;简单易用的图像分辨率放大软件(基于&lt;a href=&#34;https://github.com/xinntao/Real-ESRGAN&#34;&gt;Real-ESRGAN&lt;/a&gt;)&lt;/h3&gt;&#xA;&lt;h5 id=&#34;概述&#34;&gt;概述&lt;/h5&gt;&#xA;&lt;p&gt;本项目基于可以将低清图像转化为高清图像的项目&lt;a href=&#34;https://github.com/xinntao/Real-ESRGAN&#34;&gt;Real-ESRGAN&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;提供了对普通用户简单易用的界面&lt;/p&gt;&#xA;&lt;h5 id=&#34;软件效果预览&#34;&gt;软件效果预览&lt;/h5&gt;&#xA;&lt;p&gt;(取自源项目&lt;a href=&#34;https://github.com/xinntao/Real-ESRGAN&#34;&gt;Real-ESRGAN&lt;/a&gt;)&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/xinntao/Real-ESRGAN/raw/master/assets/teaser.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;h5 id=&#34;特色&#34;&gt;特色&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;一键拖拽式操作&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;支持批量图片及文件夹（单文件,多文件,多文件夹，嵌套的多文件夹）&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>开源项目资源</title>
       <link>https://scifx.github.io/posts/opensource_proj/</link>
       <pubDate>Mon, 23 Sep 2019 16:19:32 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/opensource_proj/</guid>
-      <description>素材网站 影片： 宇宙之心（科学家采访素材） http://www.themindoftheuniverse.org/ 互联网档案馆 https://archive.org/ NASA官网 https://www.nasa.gov/ science360 https://science360.gov/files/</description>
+      <description>&lt;h1 id=&#34;素材网站&#34;&gt;素材网站&lt;/h1&gt;&#xA;&lt;p&gt;影片：&lt;/p&gt;&#xA;&lt;p&gt;宇宙之心（科学家采访素材） &lt;a href=&#34;http://www.themindoftheuniverse.org/&#34;&gt;http://www.themindoftheuniverse.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;互联网档案馆 &lt;a href=&#34;https://archive.org/&#34;&gt;https://archive.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;NASA官网 &lt;a href=&#34;https://www.nasa.gov/&#34;&gt;https://www.nasa.gov/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;science360 &lt;a href=&#34;https://science360.gov/files/&#34;&gt;https://science360.gov/files/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

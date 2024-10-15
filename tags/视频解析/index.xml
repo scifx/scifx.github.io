@@ -4,30 +4,23 @@
     <title>视频解析 on SciFX</title>
     <link>https://scifx.github.io/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/</link>
     <description>Recent content in 视频解析 on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 18 Aug 2020 21:09:02 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>手动解析下载腾讯视频</title>
       <link>https://scifx.github.io/posts/1597756142/</link>
       <pubDate>Tue, 18 Aug 2020 21:09:02 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1597756142/</guid>
-      <description>妈咪想我帮她下载某微信公众号里大悲咒的音频。 视频解析 为此，我需要先获得原视频链接，我用电脑版登陆微信，右键选择用默认浏览器打开网页。 我用Ch</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;妈咪想我帮她下载某微信公众号里大悲咒的音频。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;视频解析&#34;&gt;视频解析&lt;/h2&gt;&#xA;&lt;p&gt;为此，我需要先获得原视频链接，我用电脑版登陆微信，右键选择用默认浏览器打开网页。  我用Chrome浏览器打开网页后，我右键页面，审查网页元素，来到Network选项，过滤器设置为media，侦听来自网页的音视频类型的文件。原视频是29分钟的，我发现视频被网站拆分为了几段视频传输。这意味着需要把所有视频下载下来，然后合并为一个视频。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>如何免费观看VIP视频？</title>
       <link>https://scifx.github.io/posts/vip_video/</link>
       <pubDate>Mon, 05 Nov 2018 13:50:06 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/vip_video/</guid>
-      <description>原本喜欢的动漫在D站看得津津有味~ 看到一半居然被腾讯买断独播版权了！ WTF！！！ 可我并不想向万恶的资本主义低头，怎么办？&amp;rdquo; VIP</description>
+      <description>&lt;p&gt;原本喜欢的动漫在D站看得津津有味~&lt;/p&gt;&#xA;&lt;p&gt;看到一半居然被腾讯买断独播版权了！&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://scifx.github.io/images/mht.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;WTF！！！&lt;/p&gt;&#xA;&lt;p&gt;可我并不想向万恶的资本主义低头，怎么办？&amp;quot;&lt;/p&gt;&#xA;&lt;h3 id=&#34;vip视频解析&#34;&gt;VIP视频解析&lt;/h3&gt;&#xA;&lt;p&gt;很简单！！！&lt;/p&gt;&#xA;&lt;p&gt;在视频网址之前粘贴上解析地址！然后回车！&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,30 +4,23 @@
     <title>Godot on SciFX</title>
     <link>https://scifx.github.io/tags/godot/</link>
     <description>Recent content in Godot on SciFX</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 16 Aug 2022 14:13:15 +0800</lastBuildDate>
-    
-	<atom:link href="https://scifx.github.io/tags/godot/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://scifx.github.io/tags/godot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Godot访问手机传感器</title>
       <link>https://scifx.github.io/posts/1660630395/</link>
       <pubDate>Tue, 16 Aug 2022 14:13:15 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1660630395/</guid>
-      <description>超级简单！ 官方文档地址 #加速度 var a= Input.get_accelerometer() #陀螺仪 var b= Input.get_gyroscope() #磁场 var c= Input.get_magnetometer() #重力 var d= Input.get_gravity() 返回值都是矢量数组(x,y,z)</description>
+      <description>&lt;h1 id=&#34;超级简单&#34;&gt;超级简单！&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.godotengine.org/zh_CN/stable/classes/class_input.html?highlight=%E4%BC%A0%E6%84%9F%E5%99%A8#class-input-method-get-axis&#34;&gt;官方文档地址&lt;/a&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#加速度&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;var a&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Input&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get_accelerometer()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#陀螺仪&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;var b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Input&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get_gyroscope()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#磁场&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;var c&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Input&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get_magnetometer()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#重力&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;var d&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Input&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get_gravity()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;返回值都是矢量数组(x,y,z)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Godot导出安卓应用</title>
       <link>https://scifx.github.io/posts/1660618787/</link>
       <pubDate>Tue, 16 Aug 2022 10:59:47 +0800</pubDate>
-      
       <guid>https://scifx.github.io/posts/1660618787/</guid>
-      <description>之前在windows导出过 但是windows下文件路径太散 不好组织 现在在linux环境下步骤比较明晰 *结合官方文档参考食用更佳：为Andor</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;之前在windows导出过&lt;/p&gt;&#xA;&lt;p&gt;但是windows下文件路径太散&lt;/p&gt;&#xA;&lt;p&gt;不好组织&lt;/p&gt;&#xA;&lt;p&gt;现在在linux环境下步骤比较明晰&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;*结合官方文档参考食用更佳：&lt;a href=&#34;https://docs.godotengine.org/zh_CN/stable/development/compiling/compiling_for_android.html#note&#34;&gt;为Andorid平台编译&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;1配置andorid-sdk环境&#34;&gt;1.配置Andorid SDK环境&lt;/h2&gt;&#xA;&lt;h3 id=&#34;下载sdk&#34;&gt;下载SDK&lt;/h3&gt;&#xA;&lt;p&gt;到Androdid开发者官网：https://developer.android.google.cn/studio?hl=en&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

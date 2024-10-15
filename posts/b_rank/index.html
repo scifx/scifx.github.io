@@ -7,7 +7,7 @@
 		
 		<meta name="author" content="scifx">
 		<meta name="description" content="发现世界，记录见闻，分享知识">
-		<meta name="generator" content="Hugo 0.68.3" />
+		<meta name="generator" content="Hugo 0.135.0">
 		<title>B站的排名算法 &middot; SciFX</title>
 		<link rel="shortcut icon" href="https://scifx.github.io/images/favicon.ico">
 		<link rel="stylesheet" href="https://scifx.github.io/css/style.css">
@@ -18,7 +18,7 @@
 		
 
 		
-		<link href="https://scifx.github.io/index.xml" rel="alternate" type="application/rss+xml" title="SciFX" />
+		<link href="#ZgotmplZ" rel="alternate" type="application/rss+xml" title="SciFX" />
 		
 
 		
@@ -92,7 +92,7 @@
 </blockquote>
 <!-- raw HTML omitted -->
 <h1 id="b站推荐算法">B站推荐算法</h1>
-<pre><code>视频=硬币*0.4+收藏*0.3+弹幕*0.4+评论*0.4+播放*0.25+点赞*0.4+分享*0.6
+<pre tabindex="0"><code>视频=硬币*0.4+收藏*0.3+弹幕*0.4+评论*0.4+播放*0.25+点赞*0.4+分享*0.6
 最新视频（一天内发布）提权【总值*1.5】
 
 专栏=硬币*0.4+收藏*0.3+评论*0.4+阅读*0.25+点赞*0.4+分享*0.6
@@ -101,30 +101,30 @@
 <h1 id="源码机制分析">源码机制分析</h1>
 <p>从源码上看,B站搜索排行是基于总体项目分值和权重的。</p>
 <table>
-<thead>
-<tr>
-<th>权重</th>
-<th>项目</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0.6</td>
-<td>分享</td>
-</tr>
-<tr>
-<td>0.4</td>
-<td>评论 点赞 硬币 弹幕</td>
-</tr>
-<tr>
-<td>0.3</td>
-<td>收藏</td>
-</tr>
-<tr>
-<td>0.25</td>
-<td>播放</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">权重</th>
+          <th style="text-align: left">项目</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">0.6</td>
+          <td style="text-align: left">分享</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">0.4</td>
+          <td style="text-align: left">评论 点赞 硬币 弹幕</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">0.3</td>
+          <td style="text-align: left">收藏</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">0.25</td>
+          <td style="text-align: left">播放</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="bug权重">BUG权重</h2>
 <p>最新发布的视频（一天内发布）权重是上面所有分值加在一起后再乘以1.5倍！！</p>
@@ -181,43 +181,43 @@
     
     
         <li>
-            <a href="/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
+            <a href="https://scifx.github.io/posts/1729001041/">聊聊之后的计划<aside class="dates">Oct 15 2024</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1675560814/">挑战编辑器天花板<aside class="dates">Feb 5 2023</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669287998/">深刻认识到我们是发展中国家<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669286996/">这个世界需要理想和童话<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1669281362/">原来人生经历也很重要<aside class="dates">Nov 24 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667909416/">人渴望认同和理解<aside class="dates">Nov 8 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1667195245/">知晓和体验是不同的<aside class="dates">Oct 31 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1665117142/">我们到底在喜欢什么？<aside class="dates">Oct 7 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1662101047/">Esp32-c3在linux环境下使用Arduino的配置方法<aside class="dates">Sep 2 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662192489/">电脑ssh连接termux<aside class="dates">Sep 3 2022</aside></a>
         </li>
     
         <li>
-            <a href="/posts/1660634764/">手机端打包WebApp<aside class="dates">Aug 16 2022</aside></a>
+            <a href="https://scifx.github.io/posts/1662101047/">Esp32-c3在linux环境下使用Arduino的配置方法<aside class="dates">Sep 2 2022</aside></a>
         </li>
     
 </ul>
