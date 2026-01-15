@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Arturo on SciFX</title>
-    <link>https://scifx.github.io/tags/arturo/</link>
-    <description>Recent content in Arturo on SciFX</description>
+    <title>编程就是艺术 on SciFX</title>
+    <link>https://scifx.github.io/categories/%E7%BC%96%E7%A8%8B%E5%B0%B1%E6%98%AF%E8%89%BA%E6%9C%AF/</link>
+    <description>Recent content in 编程就是艺术 on SciFX</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 15 Jan 2026 19:49:02 +0800</lastBuildDate>
-    <atom:link href="https://scifx.github.io/tags/arturo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://scifx.github.io/categories/%E7%BC%96%E7%A8%8B%E5%B0%B1%E6%98%AF%E8%89%BA%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arturo语言发布v0.10.0</title>
       <link>https://scifx.github.io/posts/1768477712/</link>
       <pubDate>Thu, 15 Jan 2026 19:49:02 +0800</pubDate>
       <guid>https://scifx.github.io/posts/1768477712/</guid>
       <description>&lt;h1 id=&#34;arturo语言发布v0100&#34;&gt;&lt;strong&gt;Arturo语言发布v0.10.0&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Arturo是一款类Rebol和Lisp系的实用脚本语言。&lt;/p&gt;&#xA;&lt;p&gt;用Nim语言开发。&lt;/p&gt;&#xA;&lt;p&gt;语法简约，是跨平台的编程工具箱。&lt;/p&gt;&#xA;&lt;p&gt;我真的超喜欢这个语言，超级灵活，实用。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Arturo语言的评测</title>
-      <link>https://scifx.github.io/posts/1659278699/</link>
-      <pubDate>Sun, 31 Jul 2022 22:44:59 +0800</pubDate>
-      <guid>https://scifx.github.io/posts/1659278699/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;我写了文件内容搜索的测试&lt;/p&gt;&#xA;&lt;p&gt;尝试写了Nim、Python、Arturo、Autohotkey四种语言版本&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;测试数据&#34;&gt;测试数据：&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;代码量（行&#xA;Python（20+）&amp;gt;Autohotkey（20+）&amp;gt;Nim（15+）&amp;gt;Arturo（8&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
